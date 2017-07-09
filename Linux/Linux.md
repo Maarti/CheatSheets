@@ -5,6 +5,7 @@
 `/proc` is a virtual filesystem, those files and folders aren't really stored on the hard drive, they contain process information :
 
 Memory configuration : `cat /proc/meminfo`
+
 Processor info : `cat /proc/cpuinfo`
 
 In `/proc`, each of the numbered directories corresponds to an actual process ID (`ps ax`) :
@@ -45,6 +46,3 @@ In `/proc`, each of the numbered directories corresponds to an actual process ID
 /proc/PID/status
 #Process status in human readable form.
 ```
-### Sys
-Information about the system :
-
