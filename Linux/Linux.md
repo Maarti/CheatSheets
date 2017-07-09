@@ -46,3 +46,8 @@ In `/proc`, each of the numbered directories corresponds to an actual process ID
 /proc/PID/status
 #Process status in human readable form.
 ```
+
+## Useful commands
+Disk space : `df -h`
+
+
