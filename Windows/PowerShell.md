@@ -28,6 +28,7 @@ System.Diagnostics.Process
 ```
 It returns the Process objects but also the string that has not been captured.
 > First, the `return` keyword allows you to exit the function at any particular point. You may also "optionally" specify an argument to the return statement that will cause the argument to be output just before returning. `return $procs` does not mean that the function’s only output is the contents of the $procs variable. In fact this construct is semantically equivalent to `$procs; return`. 
+> -- <cite>[Effective Windows PowerShell ebook](https://rkeithhill.wordpress.com/2009/03/08/effective-windows-powershell-the-free-ebook/)</cite>
 
 To avoid the unwanted output, just throw it away by casting it to "void" :
 ```powershell
