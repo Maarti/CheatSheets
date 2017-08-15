@@ -65,6 +65,16 @@ If you don't want your collection to be flattened, you can wrap it in an array (
  ,$array | Get-TypeName
 ```
 
+If you do a foreach on a scalar variable, PowerShell will treat it as if it were a collection containing just that one scalar value.
+
+The "array subexpression operator" `$files = @(Get-ChildItem *.sys)` force the result to be a collection. It does nothing if it's already a collection : `$array = @(1,2,3,4)`
+
+Rules of empty set :
+1. Valid output can consist of no output.
+2. When assigning output to a variable in PowerShell, `$null` is used to represent an empty set.
+3. The foreach statement iterates over a scalar once, even if that scalar happens to be $null.
+
+
 ## Resources
 * [Effective Windows PowerShell ebook](https://rkeithhill.wordpress.com/2009/03/08/effective-windows-powershell-the-free-ebook/) from Keith Hill
 * [Microsoft PowerShell examples and quick ref](https://www.microsoft.com/en-us/download/details.aspx?id=42554&WT.mc_id=rss_alldownloads_all)
