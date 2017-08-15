@@ -52,6 +52,18 @@ Try this code with and without the `[void]` cast.
 * Use `Format-List *` to display all the **property values** on objects.
 * Create the filter "Get-TypeName" : `filter Get-TypeName {if ($_ -eq $null) {'<null>'} else {$_.GetType().Fullname }}` and use it to see the type names of each object passed down the pipe : `Get-Date | Get-TypeName`
 
+## Cardinality (Collections, scalars, empty)
+Each individual element of the collection is sent down the pipe, one after the other. PowerShell flattens Collections automatically.
+
+To manually flatten the collection:
+```powershell
+foreach ($item in $array) {$item} | Get-TypeName
+```
+
+If you don't want your collection to be flattened, you can wrap it in an array (using the unary comma operator) :
+```powershell
+ ,$array | Get-TypeName
+```
 
 ## Resources
 * [Effective Windows PowerShell ebook](https://rkeithhill.wordpress.com/2009/03/08/effective-windows-powershell-the-free-ebook/) from Keith Hill
