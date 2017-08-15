@@ -47,6 +47,13 @@ LongNumericString
 ```
 Try this code with and without the `[void]` cast.
 
+## Debugging
+* Use `Get-Member` to display **properties and methods** available on objects.
+* Use `F``ormat-List *` to display all the **property values** on objects.
+* Create the filter "Get-TypeName" : `filter Get-TypeName {if ($_ -eq $null) {'<null>'} else {$_.GetType().Fullname }}` and use it to see the type names of each object passed down the pipe : `Get-Date | Get-TypeName`
+
+ Get-Date | Get-TypeName
+
 ## Resources
 * [Effective Windows PowerShell ebook](https://rkeithhill.wordpress.com/2009/03/08/effective-windows-powershell-the-free-ebook/) from Keith Hill
 * [Microsoft PowerShell examples and quick ref](https://www.microsoft.com/en-us/download/details.aspx?id=42554&WT.mc_id=rss_alldownloads_all)
