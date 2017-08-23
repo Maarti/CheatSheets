@@ -96,7 +96,7 @@ Propagate up through the calling code, terminating each calling function until e
 ```powershell
  throw "Oops!"
  ```
-*See : Trap, Try/Catchfinally*
+*See : Trap, Try/Catch/Finally*
  
 ### Non-teminating Errors
  Error that does not terminate the current operation :
