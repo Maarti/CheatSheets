@@ -74,6 +74,21 @@ Rules of empty set :
 2. When assigning output to a variable in PowerShell, `$null` is used to represent an empty set.
 3. The foreach statement iterates over a scalar once, even if that scalar happens to be $null.
 
+## Pipeline bound paramters
+It's unnecessary to write :
+```powershell
+Get-ChildItem . *.cs -r | Foreach { Get-Content $_.fullname } | ...
+```
+You can use directly :
+```powershell
+Get-ChildItem . *.cs -r | Get-Content | ...
+```
+Because many PowerShell cmdlets bind their "primary" parameter to the pipeline. This is indicated in the help (`Get-Help Get-Content -Full`) :
+> Required? true
+> Position? 1
+> Default value N/A - The path must be specified
+> **Accept pipeline input? true (ByPropertyName)**
+> Accept wildcard characters? true 
 
 ## Resources
 * [Effective Windows PowerShell ebook](https://rkeithhill.wordpress.com/2009/03/08/effective-windows-powershell-the-free-ebook/) from Keith Hill
