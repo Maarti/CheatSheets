@@ -84,10 +84,10 @@ You can use directly :
 Get-ChildItem . *.cs -r | Get-Content | ...
 ```
 Because many PowerShell cmdlets bind their "primary" parameter to the pipeline. This is indicated in the help (`Get-Help Get-Content -Full`) :
-> Required? true
-> Position? 1
-> Default value N/A - The path must be specified
-> **Accept pipeline input? true (ByPropertyName)**
+> Required? true   
+> Position? 1   
+> Default value N/A - The path must be specified   
+> **Accept pipeline input? true (ByPropertyName)**   
 > Accept wildcard characters? true 
 
 ## Resources
