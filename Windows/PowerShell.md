@@ -90,6 +90,22 @@ Because many PowerShell cmdlets bind their "primary" parameter to the pipeline. 
 > **Accept pipeline input? true (ByPropertyName)**   
 > Accept wildcard characters? true 
 
+## Error Handling
+### Teminating Errors
+Propagate up through the calling code, terminating each calling function until either the error is handled or the original invoking operation is terminated :
+```powershell
+ throw "Oops!"
+ ```
+*See : Trap, Try/Catchfinally*
+ 
+### Non-teminating Errors
+ Error that does not terminate the current operation :
+ ```powershell
+ Write-Error "Oops!"
+ ```
+ 
+
+
 ## Resources
 * [Effective Windows PowerShell ebook](https://rkeithhill.wordpress.com/2009/03/08/effective-windows-powershell-the-free-ebook/) from Keith Hill
 * [Microsoft PowerShell examples and quick ref](https://www.microsoft.com/en-us/download/details.aspx?id=42554&WT.mc_id=rss_alldownloads_all)
