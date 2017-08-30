@@ -1,0 +1,1 @@
+[How animate a walking cycle](https://www.youtube.com/watch?v=dYCGMdQgs-I) (2 legs and 4 legs)
