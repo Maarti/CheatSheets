@@ -1,7 +1,7 @@
 # Java EE cheatsheet
 
 
-### Servlet
+### Servlet
 
 * Le client envoie des requêtes au serveur grâce aux méthodes du protocole HTTP, notamment GET, POST et HEAD.
 
@@ -34,7 +34,9 @@ Une servlet n'est pas chargée de l'affichage des données, elle ne doit donc pa
 * Les paramètres de requête sont utilisés pour permettre à un client de transmettre des données au serveur.
 
 ### Objets implicites
+
 *(accessibles directement depuis une jsp)*
+
 |Identifiant|Type de l'objet|Description|
 |--- |--- |--- |
 |pageContext|PageContext|Il fournit des informations utiles relatives au contexte d'exécution. Entre autres, il permet d'accéder aux attributs présents dans les différentes portées de l'application. Il contient également une référence vers tous les objets implicites suivants.|
