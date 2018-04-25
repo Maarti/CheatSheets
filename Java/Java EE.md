@@ -33,9 +33,11 @@ Une servlet n'est pas chargée de l'affichage des données, elle ne doit donc pa
 
 * Les paramètres de requête sont utilisés pour permettre à un client de transmettre des données au serveur.
 
-### Objets implicites
+### Technologie JSP / Expression Language
 
-*(accessibles directement depuis une jsp)*
+#### Objets implicites de la technologie JSP
+
+*(accessibles directement depuis une JSP)*
 
 |Identifiant|Type de l'objet|Description|
 |--- |--- |--- |
@@ -50,6 +52,35 @@ Une servlet n'est pas chargée de l'affichage des données, elle ne doit donc pa
 |page|objet this|Il est l'équivalent de la référence this et représente la page JSP courante. Il est déconseillé de l'utiliser, pour des raisons de dégradation des performances notamment.|
 
 
+#### Objets implicites de la technologie EL
+
+|Catégorie|Identifiant|Description|
+|--- |--- |--- |
+|JSP|pageContext|Objet contenant des informations sur  l'environnement du serveur.|
+|Portées|pageScope|Une Map qui associe les noms et valeurs des attributs  ayant pour portée la page.|
+|requestScope|Une Map  qui associe les noms et valeurs des attributsayant pour portée la requête.|
+|sessionScope|Une Map  qui associe les noms et valeurs des attributsayant pour portée la session.|
+|applicationScope|Une Map  qui associe les noms et valeurs des attributsayant pour portée l'application.|
+|Paramètres de requête|param|Une Map qui associe les noms et valeurs des paramètres  de la requête.|
+|paramValues|Une Map  qui associe les noms et multiples valeurs ** des paramètresde la requête sous forme de tableaux de String.|
+|En-têtes de requête|header|Une Map qui associe les noms et valeurs des paramètres  des en-têtes HTTP.|
+|headerValues|Une Map  qui associe les noms et multiples valeurs ** des paramètresdes en-têtes HTTP sous forme de tableaux de String.|
+|Cookies|cookie|Une Map qui associe les noms et instances des cookies.|
+|Paramètres d’initialisation|initParam|Une Map qui associe les données contenues dans les  champs <param-name> et <param-value> de  la section <init-param> du fichier web.xml.|
+
+* La technologie EL est fondée sur les JavaBeans et sur les collections Java, et existe depuis la version 2.4 de l'API Servlet.
+
+* Les expressions EL remplacent les actions standard de manipulation des objets.
+
+* Une expression EL permet d'effectuer des tests, interprétés à la volée lors de l'exécution de la page.
+
+* L'interprétation des expressions EL peut être désactivée via une section dans le fichier web.xml.
+
+* Un objet implicite n'est pas géré par le développeur, mais par le conteneur de servlets.
+
+* Chaque objet implicite JSP donne accès à un objet mis à disposition par le conteneur.
+
+* Chaque objet implicite EL est un raccourci vers des données de l'application.
 
 ## Resources
 * [OpenClassroom](https://openclassrooms.com/courses/creez-votre-application-web-avec-java-ee/servlet-avec-vue)
