@@ -58,13 +58,13 @@ Une servlet n'est pas chargée de l'affichage des données, elle ne doit donc pa
 |--- |--- |--- |
 |JSP|pageContext|Objet contenant des informations sur  l'environnement du serveur.|
 |Portées|pageScope|Une Map qui associe les noms et valeurs des attributs  ayant pour portée la page.|
-|requestScope|Une Map  qui associe les noms et valeurs des attributsayant pour portée la requête.|
-|sessionScope|Une Map  qui associe les noms et valeurs des attributsayant pour portée la session.|
-|applicationScope|Une Map  qui associe les noms et valeurs des attributsayant pour portée l'application.|
+| |requestScope|Une Map  qui associe les noms et valeurs des attributsayant pour portée la requête.|
+| |sessionScope|Une Map  qui associe les noms et valeurs des attributsayant pour portée la session.|
+| |applicationScope|Une Map  qui associe les noms et valeurs des attributsayant pour portée l'application.|
 |Paramètres de requête|param|Une Map qui associe les noms et valeurs des paramètres  de la requête.|
-|paramValues|Une Map  qui associe les noms et multiples valeurs ** des paramètresde la requête sous forme de tableaux de String.|
+| |paramValues|Une Map  qui associe les noms et multiples valeurs ** des paramètresde la requête sous forme de tableaux de String.|
 |En-têtes de requête|header|Une Map qui associe les noms et valeurs des paramètres  des en-têtes HTTP.|
-|headerValues|Une Map  qui associe les noms et multiples valeurs ** des paramètresdes en-têtes HTTP sous forme de tableaux de String.|
+| |headerValues|Une Map  qui associe les noms et multiples valeurs ** des paramètresdes en-têtes HTTP sous forme de tableaux de String.|
 |Cookies|cookie|Une Map qui associe les noms et instances des cookies.|
 |Paramètres d’initialisation|initParam|Une Map qui associe les données contenues dans les  champs <param-name> et <param-value> de  la section <init-param> du fichier web.xml.|
 
