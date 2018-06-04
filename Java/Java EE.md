@@ -33,6 +33,16 @@ Une servlet n'est pas chargée de l'affichage des données, elle ne doit donc pa
 
 * Les paramètres de requête sont utilisés pour permettre à un client de transmettre des données au serveur.
 
+#### Scopes
+
+* **la page :** les objets créés avec la portée page ne sont accessibles que depuis cette même page, et une fois la réponse retournée au navigateur ces données ne sont plus accessibles ;
+
+* **la requête :** les objets créés avec la portée request ne sont accessibles que depuis les pages qui traitent cette même requête. Si la requête est transmise à une autre page, les données sont conservées, mais sont perdues en cas de redirection ;
+
+* **la session :** les objets créés avec la portée session ne sont accessibles que depuis les pages traitant les requêtes créées dans cette même session. Concrètement, une session correspond à la durée pendant laquelle un visiteur va utiliser l'application, cette durée se terminant lorsque l'utilisateur ferme son navigateur ou encore lorsque l'application le décide (le développeur, pour être exact) ; par exemple via un lien de déconnexion ou encore un temps maximum de validité imposé après lequel la session est automatiquement détruite. Les données ainsi créées ne sont plus accessibles une fois que le visiteur quitte le site ;
+
+* **l'application :** les objets créés avec la portée application sont accessibles depuis toutes les pages JSP de l'application web ! C'est en quelque sorte une variable globale, accessible partout.
+
 ### Technologie JSP / Expression Language
 
 #### Objets implicites de la technologie JSP
@@ -81,6 +91,24 @@ Une servlet n'est pas chargée de l'affichage des données, elle ne doit donc pa
 * Chaque objet implicite JSP donne accès à un objet mis à disposition par le conteneur.
 
 * Chaque objet implicite EL est un raccourci vers des données de l'application.
+
+### JSTL
+
+#### Configuration
+
+* la JSTL est composée de cinq bibliothèques de balises standard ;
+
+* elle permet d'éviter l'utilisation de code Java dans les pages JSP ;
+
+* elle permet de réduire la quantité de code à écrire ;
+
+* elle rend le code des pages JSP plus lisible ;
+
+* sous Tomcat, il faut placer son fichier .jar sous /WEB-INF/lib pour qu'elle soit correctement intégrée.
+
+#### Balises
+**<c:out>** À utiliser pour afficher les variables car il échappe les caracères XML
+    <c:out value="<p>Paragraphe</p>">
 
 ## Resources
 * [OpenClassroom](https://openclassrooms.com/courses/creez-votre-application-web-avec-java-ee/servlet-avec-vue)
