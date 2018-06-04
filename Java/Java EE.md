@@ -33,7 +33,7 @@ Une servlet n'est pas chargée de l'affichage des données, elle ne doit donc pa
 
 * Les paramètres de requête sont utilisés pour permettre à un client de transmettre des données au serveur.
 
-#### Scopes
+#### Scopes
 
 * **la page :** les objets créés avec la portée page ne sont accessibles que depuis cette même page, et une fois la réponse retournée au navigateur ces données ne sont plus accessibles ;
 
@@ -107,8 +107,13 @@ Une servlet n'est pas chargée de l'affichage des données, elle ne doit donc pa
 * sous Tomcat, il faut placer son fichier .jar sous /WEB-INF/lib pour qu'elle soit correctement intégrée.
 
 #### Balises
-**<c:out>** À utiliser pour afficher les variables car il échappe les caracères XML
-    <c:out value="<p>Paragraphe</p>">
+**<c:out>** À utiliser pour afficher les variables car il échappe les caracères XML `<c:out value="<p>Paragraphe</p>">̀
+
+**<c:set>** 
+```jsp
+<c:set var="message" value="Salut les zéros !" scope="request" />
+<c:out value="${requestScope.message}" />
+```
 
 ## Resources
 * [OpenClassroom](https://openclassrooms.com/courses/creez-votre-application-web-avec-java-ee/servlet-avec-vue)
