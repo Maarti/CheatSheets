@@ -107,13 +107,15 @@ Une servlet n'est pas chargée de l'affichage des données, elle ne doit donc pa
 * sous Tomcat, il faut placer son fichier .jar sous /WEB-INF/lib pour qu'elle soit correctement intégrée.
 
 #### Balises
-**<c:out>** À utiliser pour afficher les variables car il échappe les caracères XML `<c:out value="<p>Paragraphe</p>">̀
+**<c:out>** À utiliser pour afficher les variables car il échappe les caracères XML `<c:out value="<p>Paragraphe</p>">`
 
 **<c:set>** 
 ```jsp
-<c:set var="message" value="Salut les zéros !" scope="request" />
+<c:set var="message" value="Hello" scope="request" />
 <c:out value="${requestScope.message}" />
 ```
+
+[[Voir la liste](http://cs.roosevelt.edu/eric/books/JSP/jstl-quick-reference.pdf)]
 
 ## Resources
 * [OpenClassroom](https://openclassrooms.com/courses/creez-votre-application-web-avec-java-ee/servlet-avec-vue)
