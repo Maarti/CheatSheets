@@ -17,9 +17,15 @@ Modifier dynamiquement les propriétés du DOM en fonction de TypeScript.
 ```html
 <button [disabled]="!isAuth">Send</button>
 ```
-* Désactive le bouton si `isAuth===false` *
+*Désactive le bouton si `isAuth===false`*
 
 ## Event binding
+Réagir dans TypeScript aux évènements venant du template HTML.
+
+```html
+<button (click)="onAllumer()">Tout allumer</button>
+```
+*[Voir la liste des évènements](https://www.w3schools.com/angular/angular_events.asp)*
 
 ## Two-way binding
 

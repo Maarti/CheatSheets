@@ -36,7 +36,7 @@
 - M : move object to layer (see layers panel in the bottom)
 
 ### Edit Mode :
-* There is an undo history in object mode and one in edit mode *
+*There is an undo history in object mode and one in edit mode*
 - Ctrl + Tab (in edit mode) : Mesh select mode (face,vertex,edge)
 - E : Extrude tool
 - Ctrl + R : loop cut (add vertices to middle of object)
