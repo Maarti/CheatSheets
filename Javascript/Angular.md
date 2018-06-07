@@ -1,5 +1,5 @@
 
-# Angular JS
+# Angular
 
 ## Gérer les données
 
@@ -19,7 +19,7 @@ Pour modifier dynamiquement les propriétés du DOM en fonction de TypeScript. O
 *Désactive le bouton si `isAuth===false`*
 
 
-## Event binding
+### Event binding
 Pour réagir dans TypeScript aux évènements venant du template HTML. On utilise les parenthèses pour le déclarer `( )`.
 ```html
 <button (click)="onAllumer()">Tout allumer</button>
@@ -27,23 +27,32 @@ Pour réagir dans TypeScript aux évènements venant du template HTML. On utilis
 *[Voir la liste des évènements](https://www.w3schools.com/angular/angular_events.asp)*
 
 
-## Two-way binding
-Pour déclarer **et** récupérer le contenu le contenu d'un champ *(par exemple)*. On utilise `[()]` pour le déclarer.
+### Two-way binding
+Pour déclarer **et** récupérer le contenu d'un champ *(par exemple)*. On utilise `[( )]` pour le déclarer.
 
 Il faut importer **FormsModule** dans l'app.module.ts :
 ```typescript
 import { FormsModule } from '@angular/forms';
+
+//	[...]
+
 @NgModule({
-//...
+  // [...]
   imports: [
     FormsModule
   ]
 })
+//	[...]
 ```
 ```html
  <h4>Name : {{ name }}</h4>
   <input type="text" class="form-control" [(ngModel)]="name">
 ```
-**Il y a une nouvelle instance du component pour chaque réutilisation de celui-ci. Donc la modification de la variable `name` n'impacte que l'instance du component en cours.**
+=> Il y a **une nouvelle instance** du component pour **chaque réutilisation** de celui-ci. Donc la modification de la variable `name` **n'impacte que l'instance du component en cours**.
 
-## Propriétés personnalisées
+
+### Propriétés personnalisées
+
+## Resources
+* [Angular Docs](https://angular.io/docs)
+* [OpenClassrooms tuto](https://openclassrooms.com/courses/developpez-avec-angular)
