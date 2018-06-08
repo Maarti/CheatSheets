@@ -53,6 +53,11 @@ import { FormsModule } from '@angular/forms';
 ### Propriétés personnalisées
 Pour déclarer une propriété qui peut être mise à jour via **Property binding**.
 ```typescript
+import { Input } from '@angular/core';
+
+// [...]
+
+// On déclare 2 propriétés grâce à @Input()
 @Input() appareilName: string;
 @Input() appareilStatus: string;
 ```
@@ -63,6 +68,8 @@ appareilTwo = 'Frigo';
 ```
 
 ```html
+<!--	On donne à la propriété appareilName la valeur de la variable appareilOne
+		On donne à la propriété appareilStatus la valeur de la string 'éteint' -->
 <app-appareil [appareilName]="appareilOne" [appareilStatus]="'éteint'"></app-appareil>
 <app-appareil [appareilName]="appareilTwo" [appareilStatus]="'allumé'"></app-appareil>
 ```
@@ -79,5 +86,5 @@ appareilTwo = 'Frigo';
 
 ## Resources
 * [Angular Docs](https://angular.io/docs)
-* [w3schools](https://www.w3schools.com/angular/default.asp)
-* [OpenClassrooms tuto](https://openclassrooms.com/courses/developpez-avec-angular)
+* [W3schools Angular](https://www.w3schools.com/angular/default.asp)
+* [OpenClassrooms tutorial](https://openclassrooms.com/courses/developpez-avec-angular)
