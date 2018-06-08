@@ -69,22 +69,52 @@ appareilTwo = 'Frigo';
 
 ```html
 <!--	On donne à la propriété appareilName la valeur de la variable appareilOne
-		On donne à la propriété appareilStatus la valeur de la string 'éteint' -->
+	On donne à la propriété appareilStatus la valeur de la string 'éteint' -->
 <app-appareil [appareilName]="appareilOne" [appareilStatus]="'éteint'"></app-appareil>
 <app-appareil [appareilName]="appareilTwo" [appareilStatus]="'allumé'"></app-appareil>
 ```
 *Si on emploit les crochets pour le property binding et qu'on souhaite y passer un string, il faut le mettre **entre apostrophes**, sinon c'est le nom d'une variable qui est passé. (exemple : `[appareilStatus]="'éteint'"`)*
 
 
-## Directives
+## Built-in directives
 
 ### Les directives structurelles
+#### *ngIf
+Le composant ne s'affichera que si la condition `*ngIf="condition"` est `true`.
+```html
+<div *ngIf="appareilStatus === 'éteint'">OFF</div>
+```
 
+#### *ngFor
+`*ngFor="let obj of myArray"` permet d'ittérer sur `myArray` pour récupérer les propriétés de `obj` grâce au **property binding**.
+
+```typescript
+appareils = [
+    {
+      name: 'Machine à laver',
+      status: 'éteint'
+    },
+    {
+      name: 'Frigo',
+      status: 'allumé'
+    },
+    {
+      name: 'Ordinateur',
+      status: 'éteint'
+    }
+  ];
+```
+```html
+<app-appareil  *ngFor="let appareil of appareils"
+                       [appareilName]="appareil.name"
+                       [appareilStatus]="appareil.status"></app-appareil>
+```
 
 ### Les directives par attribut
 
 
 ## Resources
 * [Angular Docs](https://angular.io/docs)
+* [Angular Cheatsheet](https://angular.io/guide/cheatsheet)
 * [W3schools Angular](https://www.w3schools.com/angular/default.asp)
 * [OpenClassrooms tutorial](https://openclassrooms.com/courses/developpez-avec-angular)
