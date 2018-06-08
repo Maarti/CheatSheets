@@ -78,7 +78,7 @@ appareilTwo = 'Frigo';
 
 ## Built-in directives
 
-### Les directives structurelles
+### Les directives structurelles [[doc](https://angular.io/guide/structural-directives)]
 *Les directives structurelles sont précédées d'un astérisque* `*`
 #### *ngIf
 Le composant ne s'affichera que si la condition `*ngIf="condition"` est `true`.
@@ -111,7 +111,7 @@ appareils = [
                        [appareilStatus]="appareil.status"></app-appareil>
 ```
 
-### Les directives par attribut
+### Les directives par attribut [[doc](https://angular.io/guide/attribute-directives)]
 #### ngStyle
  Permet d'appliquer des styles de manière dynamique.
 ```html
@@ -137,6 +137,24 @@ Permet d'ajouter des classes dynamiquement.
 ou
 ```html
 <li [ngClass]="myClassObject">
+```
+
+## Pipes [[doc](https://angular.io/guide/pipes)]
+Permet de modifier l'affichage d'un objet sans en modifier la nature. 
+```typescript
+lastUpdate = new Date();
+```
+```html
+<p>Mis à jour : {{ lastUpdate }}</p>
+<p>Mis à jour : {{ lastUpdate | date }}</p>
+<p>Mis à jour : {{ lastUpdate | date: 'short' }}</p>
+<p>Mis à jour : {{ lastUpdate | date: 'y MMMM EEEE d' | uppercase }}</p> <!-- Chaîne de Pipes -->
+
+<!-- Affiche
+	Mis à jour : Fri Jun 08 2018 14:27:27 GMT-0400 (heure normale de l’Amazonie)
+	Mis à jour : Jun 8, 2018
+	Mis à jour : 6/8/18, 2:27 PM
+	Mis à jour : 2018 JUNE FRIDAY 8 -->
 ```
 
 ## Resources
