@@ -79,6 +79,7 @@ appareilTwo = 'Frigo';
 ## Built-in directives
 
 ### Les directives structurelles
+*Les directives structurelles sont précédées d'un astérisque* `*`
 #### *ngIf
 Le composant ne s'affichera que si la condition `*ngIf="condition"` est `true`.
 ```html
@@ -111,7 +112,32 @@ appareils = [
 ```
 
 ### Les directives par attribut
+#### ngStyle
+ Permet d'appliquer des styles de manière dynamique.
+```html
+<h4 [ngStyle]="{color: getColor()}">Appareil {{ getStatus() }}</h4>
+```
+```typescript
+getColor() {
+    if(this.appareilStatus === 'allumé') {
+      return 'green';
+    } else if(this.appareilStatus === 'éteint') {
+      return 'red';
+    }
+}
+```
 
+#### ngClasse
+Permet d'ajouter des classes dynamiquement.
+```html
+<li [ngClass]="{'list-group-item': true,
+                'list-group-item-success': appareilStatus === 'allumé',
+                'list-group-item-danger': appareilStatus === 'éteint'}">
+```
+ou
+```html
+<li [ngClass]="myClassObject">
+```
 
 ## Resources
 * [Angular Docs](https://angular.io/docs)
