@@ -1,8 +1,7 @@
 
-# Angular
+# Angular cheatsheet
 
-## Gérer les données
-
+## Données dyamiques
 
 ### String interpolation
 Pour récupérer et injecter une variable depuis le TypeScript vers le template HTML. On utilise les double-accolades pour le déclarer `{{ }}`.
@@ -52,7 +51,33 @@ import { FormsModule } from '@angular/forms';
 
 
 ### Propriétés personnalisées
+Pour déclarer une propriété qui peut être mise à jour via **Property binding**.
+```typescript
+@Input() appareilName: string;
+@Input() appareilStatus: string;
+```
+
+```typescript
+appareilOne = 'Machine à laver';
+appareilTwo = 'Frigo';
+```
+
+```html
+<app-appareil [appareilName]="appareilOne" [appareilStatus]="'éteint'"></app-appareil>
+<app-appareil [appareilName]="appareilTwo" [appareilStatus]="'allumé'"></app-appareil>
+```
+*Si on emploit les crochets pour le property binding et qu'on souhaite y passer un string, il faut le mettre **entre apostrophes**, sinon c'est le nom d'une variable qui est passé. (exemple : `[appareilStatus]="'éteint'"`)*
+
+
+## Directives
+
+### Les directives structurelles
+
+
+### Les directives par attribut
+
 
 ## Resources
 * [Angular Docs](https://angular.io/docs)
+* [w3schools](https://www.w3schools.com/angular/default.asp)
 * [OpenClassrooms tuto](https://openclassrooms.com/courses/developpez-avec-angular)
