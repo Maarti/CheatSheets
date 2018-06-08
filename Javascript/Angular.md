@@ -134,7 +134,7 @@ Permet d'ajouter des classes dynamiquement.
                 'list-group-item-success': appareilStatus === 'allumé',
                 'list-group-item-danger': appareilStatus === 'éteint'}">
 ```
-ou
+On peut également passer directement un objet contenant tous les attributs nécessaires :
 ```html
 <li [ngClass]="myClassObject">
 ```
@@ -156,7 +156,20 @@ lastUpdate = new Date();
 	Mis à jour : 6/8/18, 2:27 PM
 	Mis à jour : 2018 JUNE FRIDAY 8 -->
 ```
-AsyncPipe permet de gérer les données asynchrones (attends que la donnée soit reçue avant de continuer d'exécuter la Pipe). Très utile pour les données récupérées depuis un serveur externe. ([voir la doc](https://angular.io/guide/pipes#the-impure-asyncpipe))
+**AsyncPipe** permet de gérer les données asynchrones *(attends que la donnée soit reçue avant de continuer d'exécuter la Pipe)*. Très utile pour les données récupérées depuis un serveur externe. ([voir la doc](https://angular.io/guide/pipes#the-impure-asyncpipe))
+
+##Services  [[doc](https://angular.io/guide/architecture-services)]
+Permet de centraliser des parties du code.
+
+Un service doit être injecté ; 3 niveaux possibles :
+* dans `AppModule` : la même instance du service sera utilisée par tous les components de l'application et par les autres services ;
+* dans `AppComponent` : tous les components auront accès à la même instance du service mais pas les autres services ;
+* dans un autre component : le component lui-même et ses enfants auront accès à la même instance du service, mais pas le reste de l'application.
+
+[Lifecycle Hooks doc](https://angular.io/guide/lifecycle-hooks)
+
+
+
 
 ## Resources
 * [Angular Docs](https://angular.io/docs)
