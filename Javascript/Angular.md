@@ -156,6 +156,7 @@ lastUpdate = new Date();
 	Mis à jour : 6/8/18, 2:27 PM
 	Mis à jour : 2018 JUNE FRIDAY 8 -->
 ```
+AsyncPipe permet de gérer les données asynchrones (attends que la donnée soit reçue avant de continuer d'exécuter la Pipe). Très utile pour les données récupérées depuis un serveur externe. ([voir la doc](https://angular.io/guide/pipes#the-impure-asyncpipe))
 
 ## Resources
 * [Angular Docs](https://angular.io/docs)
