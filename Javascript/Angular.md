@@ -158,7 +158,7 @@ lastUpdate = new Date();
 ```
 **AsyncPipe** permet de gérer les données asynchrones *(attends que la donnée soit reçue avant de continuer d'exécuter la Pipe)*. Très utile pour les données récupérées depuis un serveur externe. ([voir la doc](https://angular.io/guide/pipes#the-impure-asyncpipe))
 
-##Services  [[doc](https://angular.io/guide/architecture-services)]
+## Services  [[doc](https://angular.io/guide/architecture-services)]
 Permet de centraliser des parties du code.
 
 Un service doit être injecté ; 3 niveaux possibles :
@@ -168,6 +168,10 @@ Un service doit être injecté ; 3 niveaux possibles :
 
 [Lifecycle Hooks doc](https://angular.io/guide/lifecycle-hooks)
 
+[OpenClassrooms](https://openclassrooms.com/courses/developpez-avec-angular/ameliorez-la-structure-du-code-avec-les-services)
+
+## Routes [[doc](https://angular.io/guide/router)]
+[OpenClassrooms](https://openclassrooms.com/courses/developpez-avec-angular/gerez-la-navigation-avec-le-routing)
 
 
 
