@@ -140,7 +140,7 @@ On peut également passer directement un objet contenant tous les attributs néc
 ```
 
 ## Pipes [[doc](https://angular.io/guide/pipes)]
-Permet de modifier l'affichage d'un objet sans en modifier la nature. 
+Permet de modifier l'affichage d'un objet sans en modifier la nature.
 ```typescript
 lastUpdate = new Date();
 ```
@@ -170,7 +170,7 @@ export class HeroService {
   constructor() { }
 
   getHeroes() {
-    // ...
+    // [...]
     return this.heroes;
   }
 }
@@ -180,7 +180,7 @@ export class HeroService {
 Quand Angular créé l'instance d'un Component, il détermine quels Services ce Component a besoin en regardant les types des paramètres de son constructeur. Pour injecter un Service dans un Component, on l'ajoute donc en paramètre de son constructeur :
 ```typescript
 import { HeroService } from '../services/hero.service';
-// ...
+// [...]
 constructor(private service: HeroService) { }
 ```
 
@@ -209,13 +209,13 @@ Définit quel(s) component(s) il faut afficher à quel(s) endroit(s) pour une UR
 Création des routes :
 ```typescript
 import { Routes } from '@angular/router';
-// ...
+// [...]
 const appRoutes: Routes = [
   { path: 'appareils', component: AppareilViewComponent }, // Affiche le component AppareilView pour l'url localhost:4200/appareils
   { path: 'auth', component: AuthComponent },
   { path: '', component: AppareilViewComponent }
 ];
-// ...
+// [...]
   imports: [
     RouterModule.forRoot(appRoutes)
 	]
@@ -263,7 +263,7 @@ onSignIn() {
 Récupérer le paramètre de l'URL :
 ```typescript
 constructor(private route: ActivatedRoute) { }
-// ...
+// [...]
 this.id = this.route.snapshot.params['id'];
 ```
 
