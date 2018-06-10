@@ -272,12 +272,18 @@ Création d'un lien :
 <a [routerLink]="[id]">Détail</a>
 ```
 
-### Guard
+## Guard  [[doc](https://angular.io/guide/router#milestone-5-route-guards)]
 Une Guard est un service qu'Angular exécutera au moment où l'utilisateur essaye de naviguer vers la route sélectionnée *(plutôt que d'exécuter du code dans le onInit de chaque Component)*.
+[Voir cours OpenClassrooms](https://openclassrooms.com/courses/developpez-avec-angular/gerez-la-navigation-avec-le-routing#/id/r-5089287)
 
 
 
-[Lifecycle Hooks doc](https://angular.io/guide/lifecycle-hooks)
+## Useful
+* Check the version of Angular, typescript, rxjs ... : `ng -v`
+* Updating Angular Version : [Angular Update Guide](https://update.angular.io/)
+* [RXJS v6](https://www.academind.com/learn/javascript/rxjs-6-what-changed/) backward compatibility : `npm install --save rxjs-compat`
+
+
 ## Resources
 * [Angular Docs](https://angular.io/docs)
 * [Angular Cheatsheet](https://angular.io/guide/cheatsheet)
