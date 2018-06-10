@@ -161,7 +161,7 @@ lastUpdate = new Date();
 ## Services  [[doc](https://angular.io/guide/architecture-services)]
 Un classe qui permet de centraliser des parties du code (champs, méthodes...).
 
-### 1. Création du service
+### 1. Création du Service
 Créer un fichier `/services/hero.service.ts` *(par exemple)*
 ```typescript
 export class HeroService {
@@ -176,13 +176,15 @@ export class HeroService {
 }
 ```
 
-### 2. Injection du service dans un component
+### 2. Injection du Service dans un Component
 Quand Angular créé l'instance d'un Component, il détermine quels Services ce Component a besoin en regardant les types des paramètres de son constructeur. Pour injecter un Service dans un Component, on l'ajoute donc en paramètre de son constructeur :
 ```typescript
+import { HeroService } from '../services/hero.service';
+// ...
 constructor(private service: HeroService) { }
 ```
 
-### 3. Déclarer le service dans un Provider
+### 3. Déclarer le Service dans un Provider
 Il faut enregistrer notre Service dans au moins un tableau de Provider. Il peut être enregistré à 3 niveaux différents :
 * dans `AppModule` : la même instance du service sera utilisée par tous les components de l'application et par les autres services ;
 * dans `AppComponent` : tous les components auront accès à la même instance du service mais pas les autres services ;
@@ -196,17 +198,86 @@ providers: [
 ],
 ```
 
+[OpenClassrooms](https://openclassrooms.com/courses/developpez-avec-angular/ameliorez-la-structure-du-code-avec-les-services)
+
+## Routing [[doc](https://angular.io/guide/router)]
+[OpenClassrooms](https://openclassrooms.com/courses/developpez-avec-angular/gerez-la-navigation-avec-le-routing)
+
+### Routes
+Définit quel(s) component(s) il faut afficher à quel(s) endroit(s) pour une URL donnée.
+
+Création des routes :
+```typescript
+import { Routes } from '@angular/router';
+// ...
+const appRoutes: Routes = [
+  { path: 'appareils', component: AppareilViewComponent }, // Affiche le component AppareilView pour l'url localhost:4200/appareils
+  { path: 'auth', component: AuthComponent },
+  { path: '', component: AppareilViewComponent }
+];
+// ...
+  imports: [
+    RouterModule.forRoot(appRoutes)
+	]
+```
+
+Dire à Angular où afficher les components dans le template avec la balise `<router-outlet>` :
+```html
+<div>
+      <router-outlet></router-outlet>
+</div>
+```
+
+Créer un lien :
+```html
+<a routerLink="auth">Authentification</a
+```
+
+### Redirect
+Redirection et wildcard :
+```typescript
+const appRoutes: Routes = [
+  { path: 'not-found', component: FourOhFourComponent },
+  { path: '**', redirectTo: 'not-found' }
+]
+```
+
+Renvoyer vers une URL après une action :
+```typescript
+onSignIn() {
+    this.authService.signIn().then(
+      () => {
+        console.log('Sign in successful!');
+        this.authStatus = this.authService.isAuth;
+        this.router.navigate(['appareils']);
+      }
+    );
+}
+```
+
+### Paramètres URL
+```typescript
+  { path: 'appareils/:id', component: SingleAppareilComponent },
+```
+
+Récupérer le paramètre de l'URL :
+```typescript
+constructor(private route: ActivatedRoute) { }
+// ...
+this.id = this.route.snapshot.params['id'];
+```
+
+Création d'un lien :
+```html
+<a [routerLink]="[id]">Détail</a>
+```
+
+### Guard
+Une Guard est un service qu'Angular exécutera au moment où l'utilisateur essaye de naviguer vers la route sélectionnée *(plutôt que d'exécuter du code dans le onInit de chaque Component)*.
+
 
 
 [Lifecycle Hooks doc](https://angular.io/guide/lifecycle-hooks)
-
-[OpenClassrooms](https://openclassrooms.com/courses/developpez-avec-angular/ameliorez-la-structure-du-code-avec-les-services)
-
-## Routes [[doc](https://angular.io/guide/router)]
-[OpenClassrooms](https://openclassrooms.com/courses/developpez-avec-angular/gerez-la-navigation-avec-le-routing)
-
-
-
 ## Resources
 * [Angular Docs](https://angular.io/docs)
 * [Angular Cheatsheet](https://angular.io/guide/cheatsheet)
