@@ -159,12 +159,44 @@ lastUpdate = new Date();
 **AsyncPipe** permet de gérer les données asynchrones *(attends que la donnée soit reçue avant de continuer d'exécuter la Pipe)*. Très utile pour les données récupérées depuis un serveur externe. ([voir la doc](https://angular.io/guide/pipes#the-impure-asyncpipe))
 
 ## Services  [[doc](https://angular.io/guide/architecture-services)]
-Permet de centraliser des parties du code.
+Un classe qui permet de centraliser des parties du code (champs, méthodes...).
 
-Un service doit être injecté ; 3 niveaux possibles :
+### 1. Création du service
+Créer un fichier `/services/hero.service.ts` *(par exemple)*
+```typescript
+export class HeroService {
+  private heroes: Hero[] = [];
+
+  constructor() { }
+
+  getHeroes() {
+    // ...
+    return this.heroes;
+  }
+}
+```
+
+### 2. Injection du service dans un component
+Quand Angular créé l'instance d'un Component, il détermine quels Services ce Component a besoin en regardant les types des paramètres de son constructeur. Pour injecter un Service dans un Component, on l'ajoute donc en paramètre de son constructeur :
+```typescript
+constructor(private service: HeroService) { }
+```
+
+### 3. Déclarer le service dans un Provider
+Il faut enregistrer notre Service dans au moins un tableau de Provider. Il peut être enregistré à 3 niveaux différents :
 * dans `AppModule` : la même instance du service sera utilisée par tous les components de l'application et par les autres services ;
 * dans `AppComponent` : tous les components auront accès à la même instance du service mais pas les autres services ;
 * dans un autre component : le component lui-même et ses enfants auront accès à la même instance du service, mais pas le reste de l'application.
+
+```typescript
+providers: [
+  BackendService,
+  HeroService,
+  Logger
+],
+```
+
+
 
 [Lifecycle Hooks doc](https://angular.io/guide/lifecycle-hooks)
 
