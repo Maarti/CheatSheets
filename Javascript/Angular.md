@@ -276,7 +276,17 @@ Création d'un lien :
 Une Guard est un service qu'Angular exécutera au moment où l'utilisateur essaye de naviguer vers la route sélectionnée *(plutôt que d'exécuter du code dans le onInit de chaque Component)*.
 [Voir cours OpenClassrooms](https://openclassrooms.com/courses/developpez-avec-angular/gerez-la-navigation-avec-le-routing#/id/r-5089287)
 
+## [Deploy Angular App on GithubPages](https://alligator.io/angular/deploying-angular-app-github-pages/)
+* First install the angular-cli-ghpages globally : `npm install -g angular-cli-ghpages`
+* Build project with href location : `ng build --prod --base-href "https://<user-name>.github.io/<repo>/"`
+* Deploy : `ngh`
 
+**If the app is in the subfolder** and you have the `` [error](https://github.com/angular-schule/angular-cli-ghpages/issues/37), set the base href : `ngh --dir dist/[PROJECTNAME]`
+
+##Collaborate
+* Clone the repo : `git clone `
+* Install node_modules folder : `npm install`
+* Run : `npm start`
 
 ## Useful
 * Check the version of Angular, typescript, rxjs ... : `ng -v`
