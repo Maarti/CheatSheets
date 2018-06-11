@@ -281,9 +281,9 @@ Une Guard est un service qu'Angular exécutera au moment où l'utilisateur essay
 * Build project with href location : `ng build --prod --base-href "https://<user-name>.github.io/<repo>/"`
 * Deploy : `ngh`
 
-**If the app is in the subfolder** and you have the `` [error](https://github.com/angular-schule/angular-cli-ghpages/issues/37), set the base href : `ngh --dir dist/[PROJECTNAME]`
+**If the app is in a subfolder** and you have the `index.html could not be copied to 404.html` [error](https://github.com/angular-schule/angular-cli-ghpages/issues/37), set the base href : `ngh --dir dist/[PROJECTNAME]`
 
-##Collaborate
+## Collaborate
 * Clone the repo : `git clone `
 * Install node_modules folder : `npm install`
 * Run : `npm start`
