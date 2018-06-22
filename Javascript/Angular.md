@@ -75,7 +75,7 @@ appareilTwo = 'Frigo';
 ```
 *Si on emploit les crochets pour le property binding et qu'on souhaite y passer un string, il faut le mettre **entre apostrophes**, sinon c'est le nom d'une variable qui est passé. (exemple : `[appareilStatus]="'éteint'"`)*
 
-### Variable locale
+### Template reference variables [[doc](https://angular.io/guide/template-syntax#ref-vars)]
 La syntaxe `#` déclare une variable locale qui référence un élément du DOM dans le template :
 ```html
 <input type="text" #harry>
@@ -331,6 +331,13 @@ Un opérateur est une fonction située entre l'Observable et l'Observer qui peut
 * Check the version of Angular, typescript, rxjs ... : `ng -v`
 * Updating Angular Version : [Angular Update Guide](https://update.angular.io/)
 * [RXJS v6](https://www.academind.com/learn/javascript/rxjs-6-what-changed/) backward compatibility : `npm install --save rxjs-compat`
+* Quickly display values of a form : 
+```html
+<form [formGroup]="myForm">
+	<!-- [...] -->
+</form>
+{{ myForm.value | json }}
+```
 
 ## Resources
 * [Angular Docs](https://angular.io/docs)
