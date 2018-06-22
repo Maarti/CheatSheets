@@ -75,6 +75,25 @@ appareilTwo = 'Frigo';
 ```
 *Si on emploit les crochets pour le property binding et qu'on souhaite y passer un string, il faut le mettre **entre apostrophes**, sinon c'est le nom d'une variable qui est passé. (exemple : `[appareilStatus]="'éteint'"`)*
 
+### Variable locale
+La syntaxe `#` déclare une variable locale qui référence un élément du DOM dans le template :
+```html
+<input type="text" #harry>
+ {{ harry.value }}
+```
+On peut récupérer sa valeur depuis TypeScript de cette manière :
+```typescript
+import { Component, OnInit, ViewChild } from '@angular/core';
+
+// [...]
+
+export class SurveyComponent implements OnInit {
+	@ViewChild('harry') scrollTarget;  // reference of #harry element in the template
+	
+	ngOnInit() {
+		this.scrollTarget.nativeElement.scrollIntoView({ behavior: "smooth", block: "start" });  
+	}
+```
 
 ## Built-in directives
 
@@ -230,7 +249,7 @@ Dire à Angular où afficher les components dans le template avec la balise `<ro
 
 Créer un lien :
 ```html
-<a routerLink="auth">Authentification</a
+<a routerLink="auth">Authentification</a>
 ```
 
 ### Redirect
@@ -276,6 +295,26 @@ Création d'un lien :
 Une Guard est un service qu'Angular exécutera au moment où l'utilisateur essaye de naviguer vers la route sélectionnée *(plutôt que d'exécuter du code dans le onInit de chaque Component)*.
 [Voir cours OpenClassrooms](https://openclassrooms.com/courses/developpez-avec-angular/gerez-la-navigation-avec-le-routing#/id/r-5089287)
 
+## Observable [[doc](https://angular.io/guide/observables)]
+Objet qui émet des informations auxquelles on souhaite réagir (équivalent Listener).
+
+[Cours OpenClassrooms](https://openclassrooms.com/courses/developpez-avec-angular/observez-les-donnees-avec-rxjs#/id/r-5089338)
+
+## Subject [[doc](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/gettingstarted/subjects.md)]
+C'est à la fois un Observer et un Observable, il permet de réagir à de nouvelles informations, mais également d'en émettre. Il peut donc servir de proxy entre un groupe de Subscribers et une source.
+
+[Cours OpenClassrooms](https://openclassrooms.com/courses/developpez-avec-angular/observez-les-donnees-avec-rxjs#/id/r-5089444)
+
+## Operators [[doc1](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/gettingstarted/operators.md) - [doc2](https://angular.io/guide/rx-library#operators)]
+Un opérateur est une fonction située entre l'Observable et l'Observer qui peut modifier les données reçues avant qu'elles n'arrivent à la Subscription.
+
+## Forms
+### Template
+
+
+### Reactive
+
+
 ## [Deploy Angular App on GithubPages](https://alligator.io/angular/deploying-angular-app-github-pages/)
 * First install the angular-cli-ghpages globally : `npm install -g angular-cli-ghpages`
 * Build project with href location : `ng build --prod --base-href "https://<user-name>.github.io/<repo>/"`
@@ -284,7 +323,7 @@ Une Guard est un service qu'Angular exécutera au moment où l'utilisateur essay
 **If the app is in a subfolder** and you have the `index.html could not be copied to 404.html` [error](https://github.com/angular-schule/angular-cli-ghpages/issues/37), set the base href : `ngh --dir dist/[PROJECTNAME]`
 
 ## Collaborate
-* Clone the repo : `git clone `
+* Clone the repo : `git clone https://github.com/<user-name>/<repo>.git`
 * Install node_modules folder : `npm install`
 * Run : `npm start`
 
@@ -292,7 +331,6 @@ Une Guard est un service qu'Angular exécutera au moment où l'utilisateur essay
 * Check the version of Angular, typescript, rxjs ... : `ng -v`
 * Updating Angular Version : [Angular Update Guide](https://update.angular.io/)
 * [RXJS v6](https://www.academind.com/learn/javascript/rxjs-6-what-changed/) backward compatibility : `npm install --save rxjs-compat`
-
 
 ## Resources
 * [Angular Docs](https://angular.io/docs)
