@@ -53,6 +53,7 @@
 ## Useful
 <details><summary>List of IOR values for various materials</summary>
 <p>
+
 - Acetone 1.36 
 - Actinolite 1.618 
 - Agate 1.544 
@@ -301,7 +302,7 @@
 - Zircon, Low 1.800 
 - Zirconia, Cubic 2.170 
 
-- Liquids 
+**Liquids**
 - Acetone 1.36 
 - Alcohol, Ethyl (grain) 1.36 
 - Alcohol, Methyl (wood) 1.329 
@@ -334,7 +335,7 @@
 - Water (20° C) 1.33283 
 - Whisky 1.356 
 
-- Minerals & Gemstones 
+**Minerals & Gemstones**
 - Alexandrite 1.746 - 1.755 
 - Almandine 1.75 - 1.83 
 - Amber 1.539 - 1.545 
@@ -404,7 +405,7 @@
 - Zircon 1.777 - 1.987 
 - Zirconia, Cubic 2.173 - 2.21 
 
-- Transparent materials 
+**Transparent materials**
 - Eye, Aqueous humor 1.33 
 - Eye, Cornea 1.38 
 - Eye, Lens 1.41 
@@ -423,7 +424,7 @@
 - Plexiglas 1.488 
 - Salt 1.516 
 
-- Metals 
+**Metals**
 - Aluminum 1.39 
 - Copper 2.43 
 - Gold 0.166 
@@ -447,7 +448,7 @@
 - Rutile 2.907 
 - Gallium phosphide 3.50 
 
-- Various household liquids 
+**Various household liquids**
 - Glycerin 1,367 
 - All Purpose Orange Cleaner (Pathmark Brand) 1,293 
 - Degreaser 1.377 
@@ -738,12 +739,8 @@
 - Zircon, Low 1.800 
 - Zirconia, Cubic 2.170
 
-- / Magnus
-- Magnus3D
-- 07 July 2007, 10:14 PM
-- Part 2/2
 
-- Sorted by refractive index: 
+**Sorted by refractive index:**
 - Silver 0.18 
 - Gold 0.47 
 - Helium 1.000036 
@@ -1221,16 +1218,6 @@
 - Tourmaline 1.635 - 1.675 
 - Zircon 1.923 - 2.015 
 
-- Table 1: Index of refraction of water as a 
-- function of wave length and water temperature. 
-- ---------------------------------------------- 
-- Wave Length 
-- (Angstroms) T=10 C T=20 C T=30 C 
-- 
-- 7065 1.3307 1.3300 1.3290 
-- 5893 1.3337 1.3330 1.3319 
-- 5016 1.3371 1.3364 1.3353 
-- 4047 1.3435 1.3427 1.3417 
 
 - Vaccuum 1.000000 
 - Helium 1.000036 
