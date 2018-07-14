@@ -34,23 +34,29 @@
 ### View :
 - H : hide object (alt+H unhide all) or use scene view on the top right
 - M : move object to layer (see layers panel in the bottom)
+- Ctrl + down : fullscreen 3D view
 
 ### Edit Mode :
 *There is an undo history in object mode and one in edit mode*
 - Ctrl + Tab (in edit mode) : Mesh select mode (face,vertex,edge)
-- E : Extrude tool
+- E : Extrude tool (or Ctrl+Left clic)
 - Ctrl + R : loop cut (add vertices to middle of object)
 - Alt + right clic : select edge loop (created with a loop cut)
+- F : Create face (or edge) from the multiple points selected
 
 
 ## Modifiers *(Wrench icon)*
 - Bevels : To round corner, make things more realistic. (Add modifier -> Bevel)
-- Subsurf : Virtually add  points to the mesh, following the curves of the object
+- Subsurf : Virtually add  points to the mesh, following the curves of the object, to smooth it
 
 ## Tools
 - Smooth : Tools > Shading > Smooth
+- Remove doubles
+- [Spin](https://docs.blender.org/manual/en/dev/modeling/meshes/editing/duplicating/spin.html) (don't forget to "Remove Doubles")
 
 ## Useful
+- Lissage : Smooth or Subsurf (apres un lissage, selectionner tous les points et Ctrl+N pour recalculer les normales)
+
 <details><summary>List of IOR values for various materials</summary>
 <p>
 
