@@ -48,6 +48,7 @@
 ## Modifiers *(Wrench icon)*
 - Bevels : To round corner, make things more realistic. (Add modifier -> Bevel)
 - Subsurf : Virtually add  points to the mesh, following the curves of the object, to smooth it
+- Mirror : Apply symmetry (Check Merge and Clipping)
 
 ## Tools
 - Smooth : Tools > Shading > Smooth
