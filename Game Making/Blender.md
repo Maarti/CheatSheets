@@ -38,12 +38,17 @@
 
 ### Edit Mode :
 *There is an undo history in object mode and one in edit mode*
+- Shift + C : Reset cursor to origin
 - Ctrl + Tab (in edit mode) : Mesh select mode (face,vertex,edge)
 - E : Extrude tool (or Ctrl+Left clic)
 - Ctrl + R : loop cut (add vertices to middle of object)
 - Alt + right clic : select edge loop (created with a loop cut)
 - F : Create face (or edge) from the multiple points selected
-
+- Merge meshes : select meshes and `Ctrl+J`
+- `Shift+S` : "Cursor to selected" or "Selection to cursor"
+- Select "[Proportional Editing mode](https://docs.blender.org/manual/en/dev/editors/3dview/object/editing/transform/control/proportional_edit.html)" to "Connected" to move nearby elements
+- `Alt+M` : Merge
+- `Alt+F` : Fill with triangles
 
 ## Modifiers *(Wrench icon)*
 - Bevels : To round corner, make things more realistic. (Add modifier -> Bevel)
@@ -54,6 +59,19 @@
 - Smooth : Tools > Shading > Smooth
 - Remove doubles
 - [Spin](https://docs.blender.org/manual/en/dev/modeling/meshes/editing/duplicating/spin.html) (don't forget to "Remove Doubles")
+
+## Animation
+### IKeys / IPO
+- I : Insert key (place the cursor on the view you want modifications)
+- Change interpolation : Layout "Animation" > select all curves > Key > Interpolation Mode
+
+### Rigging/Skinning
+- Shift + A : Add armature
+- Extrude the tail of the armature
+- Parenting : Select the Object **then** Armature > `Ctrl+P` > "Armature deform with auto weights"
+- `Ctrl+Tab` : Switch to Pose Mode and move the bones
+- Reset bones position : Select bones and `Alt+R`
+- Symmetrize bone : Name bone with ".L" or ".R" suffix + select bone + `W` > Symmetrize
 
 ## Useful
 - Lissage : Smooth or Subsurf (apres un lissage, selectionner tous les points et Ctrl+N pour recalculer les normales)
