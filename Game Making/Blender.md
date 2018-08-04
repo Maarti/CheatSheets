@@ -36,6 +36,9 @@
 - M : move object to layer (see layers panel in the bottom)
 - Ctrl + down : fullscreen 3D view
 
+### Object Mode :
+- Merge meshes : select objects and `Ctrl+J`
+
 ### Edit Mode :
 *There is an undo history in object mode and one in edit mode*
 - Shift + C : Reset cursor to origin
@@ -44,7 +47,6 @@
 - Ctrl + R : loop cut (add vertices to middle of object)
 - Alt + right clic : select edge loop (created with a loop cut)
 - F : Create face (or edge) from the multiple points selected
-- Merge meshes : select meshes and `Ctrl+J`
 - `Shift+S` : "Cursor to selected" or "Selection to cursor"
 - Select "[Proportional Editing mode](https://docs.blender.org/manual/en/dev/editors/3dview/object/editing/transform/control/proportional_edit.html)" to "Connected" to move nearby elements
 - `Alt+M` : Merge
@@ -64,6 +66,8 @@
 ### IKeys / IPO
 - I : Insert key (place the cursor on the view you want modifications)
 - Change interpolation : Layout "Animation" > select all curves > Key > Interpolation Mode
+- [Walking animation key frames](https://youtu.be/sTo4adwvulE?t=1m18s)
+- Paste reverse animation : `Ctrl+Shift+V`
 
 ### Rigging/Skinning
 - Shift + A : Add armature
@@ -72,6 +76,7 @@
 - `Ctrl+Tab` : Switch to Pose Mode and move the bones
 - Reset bones position : Select bones and `Alt+R`
 - Symmetrize bone : Name bone with ".L" or ".R" suffix + select bone + `W` > Symmetrize
+- IK Bone and constraints : [Watch this](https://youtu.be/8mZtc33rQ3c?t=4m14s) : add IK Bone (no parent) + add constraint Inverse kinematic
 
 ## Useful
 - Lissage : Smooth or Subsurf (apres un lissage, selectionner tous les points et Ctrl+N pour recalculer les normales)
