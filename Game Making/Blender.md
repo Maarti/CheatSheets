@@ -23,13 +23,14 @@
 - or C to circle select (wheel to zoom) 
 
 ### Manipulate :
-- G : grab (right click = cancel)
-- R : rotate (double R for free rotation mode)
-- S : scale
-- Alt + G/R/S : reset to origin
-- X : delete
-- the reticule when we left click is the spawn point
-- shift + A : add menu (or click on the left menu)
+- `G` : grab (right click = cancel)
+- `G` then `Middle Click drag` : Move along one of the 3 axis
+- `R` : rotate (double R for free rotation mode)
+- `S` : scale
+- `Alt` + G/R/S : reset to origin
+- `X` : delete
+- `Left Click` : place the reticule, it is the spawn point
+- `Shift + A` : add menu (or click on the left menu)
 
 ### View :
 - H : hide object (alt+H unhide all) or use scene view on the top right
@@ -51,6 +52,7 @@
 - Select "[Proportional Editing mode](https://docs.blender.org/manual/en/dev/editors/3dview/object/editing/transform/control/proportional_edit.html)" to "Connected" to move nearby elements
 - `Alt+M` : Merge
 - `Alt+F` : Fill with triangles
+- `L` (when hovering object) : Select all vertices linked to this object
 
 ## Modifiers *(Wrench icon)*
 - Bevels : To round corner, make things more realistic. (Add modifier -> Bevel)
