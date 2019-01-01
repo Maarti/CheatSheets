@@ -41,7 +41,7 @@
 - Merge meshes : select objects and `Ctrl`+`J`
 
 ### Edit Mode :
-*There is an undo history in object mode and one in edit mode*
+*There is an undo history in object mode **and** one in edit mode*
 - `Shift` + `C` : Reset cursor to origin
 - `Ctrl` + `Tab` (in edit mode) : Mesh select mode (face,vertex,edge)
 - `E` : Extrude tool (or Ctrl+Left click)
@@ -49,10 +49,11 @@
 - `Alt` + `Right click` : select edge loop (created with a loop cut)
 - `F` : Create face (or edge) from the multiple points selected
 - `Shift`+ `S` : "Cursor to selected" or "Selection to cursor"
-- Select "[Proportional Editing mode](https://docs.blender.org/manual/en/dev/editors/3dview/object/editing/transform/control/proportional_edit.html)" to "Connected" to move nearby elements
-- `Alt` + `M` : Merge
-- `Alt` + `F` : Fill with triangles
-- `L` (when hovering object) : Select all vertices linked to this object
+- Select "[Proportional Editing mode](https://docs.blender.org/manual/en/dev/editors/3dview/object/editing/transform/control/proportional_edit.html)" to "Connected" to move **nearby elements** *(scroll while moving to change the radius of the proportional editing influence)*
+- `Alt` + `M` : **Merge**
+- `Alt` + `F` : **Fill** with triangles
+- `L` (when hovering object) : Select all vertices **linked** to this object
+- `P` : **Separate** the selected vertices into a new mesh (a new object)
 
 ## Modifiers *(Wrench icon)*
 - Bevels : To round corner, make things more realistic. (Add modifier -> Bevel)
