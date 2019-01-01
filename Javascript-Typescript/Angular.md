@@ -342,5 +342,4 @@ Un opérateur est une fonction située entre l'Observable et l'Observer qui peut
 ## Resources
 * [Angular Docs](https://angular.io/docs)
 * [Angular Cheatsheet](https://angular.io/guide/cheatsheet)
-* [W3schools Angular](https://www.w3schools.com/angular/default.asp)
 * [OpenClassrooms tutorial](https://openclassrooms.com/courses/developpez-avec-angular)
