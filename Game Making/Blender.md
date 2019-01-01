@@ -5,53 +5,53 @@
 ## Shortcuts
 
 ### Camera :
-- Mouse middle : rotate camera
-- Shift + mouse middle : move camera
-- Z : wireframe mode / solid
-- . (on num pad) : center view on the object
-- 5 (num pad) : orthographic/perspective mode
-- 1 : front
-- 9 : oposite
-- 0 : camera mode
-- T/N : open left/right menu 
-- Tab : object mode / edit mode (see vertices)
+- `Middle click drag` : rotate camera
+- `Shift` + `Middle click drag` : move camera
+- `Z` : wireframe mode / solid
+- `.` (on num pad) : center view on the object
+- `5` (num pad) : orthographic/perspective mode
+- `1` : front
+- `9` : oposite
+- `0` : camera mode
+- `T`/`N` : open left/right menu 
+- `Tab` : object mode / edit mode (see vertices)
 
 ### Selection :
-- A : unselect/select all
-- B+left drag : select
-- B+ middle drag : unselect
-- or C to circle select (wheel to zoom) 
+- `A` : unselect/select all
+- `B` + `Left click drag` : select
+- `B` + `Middle click drag` : unselect
+- or `C` to circle select (wheel to zoom) 
 
 ### Manipulate :
 - `G` : grab (right click = cancel)
-- `G` then `Middle Click drag` : Move along one of the 3 axis
+- `G` then `Middle click drag` : Move along one of the 3 axis
 - `R` : rotate (double R for free rotation mode)
 - `S` : scale
 - `Alt` + G/R/S : reset to origin
 - `X` : delete
-- `Left Click` : place the reticule, it is the spawn point
-- `Shift + A` : add menu (or click on the left menu)
+- `Left click` : place the reticule, it is the spawn point
+- `Shift` + `A` : add menu (or click on the left menu)
 
 ### View :
-- H : hide object (alt+H unhide all) or use scene view on the top right
-- M : move object to layer (see layers panel in the bottom)
-- Ctrl + down : fullscreen 3D view
+- `H` : hide object (alt+H unhide all) or use scene view on the top right
+- `M` : move object to layer (see layers panel in the bottom)
+- `Ctrl` + `down` : fullscreen 3D view
 
 ### Object Mode :
-- Merge meshes : select objects and `Ctrl+J`
+- Merge meshes : select objects and `Ctrl`+`J`
 
 ### Edit Mode :
 *There is an undo history in object mode and one in edit mode*
-- Shift + C : Reset cursor to origin
-- Ctrl + Tab (in edit mode) : Mesh select mode (face,vertex,edge)
-- E : Extrude tool (or Ctrl+Left click)
-- Ctrl + R : loop cut (add vertices to middle of object)
-- Alt + right click : select edge loop (created with a loop cut)
-- F : Create face (or edge) from the multiple points selected
-- `Shift+S` : "Cursor to selected" or "Selection to cursor"
+- `Shift` + `C` : Reset cursor to origin
+- `Ctrl` + `Tab` (in edit mode) : Mesh select mode (face,vertex,edge)
+- `E` : Extrude tool (or Ctrl+Left click)
+- `Ctrl` + `R` : loop cut (add vertices to middle of object)
+- `Alt` + `Right click` : select edge loop (created with a loop cut)
+- `F` : Create face (or edge) from the multiple points selected
+- `Shift`+ `S` : "Cursor to selected" or "Selection to cursor"
 - Select "[Proportional Editing mode](https://docs.blender.org/manual/en/dev/editors/3dview/object/editing/transform/control/proportional_edit.html)" to "Connected" to move nearby elements
-- `Alt+M` : Merge
-- `Alt+F` : Fill with triangles
+- `Alt` + `M` : Merge
+- `Alt` + `F` : Fill with triangles
 - `L` (when hovering object) : Select all vertices linked to this object
 
 ## Modifiers *(Wrench icon)*
