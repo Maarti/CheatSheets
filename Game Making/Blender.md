@@ -1,6 +1,6 @@
 # Blender cheatsheet :
 
-*Cheatsheet I made from [Blender Fundamentals](https://www.youtube.com/playlist?list=PLa1F2ddGya_8V90Kd5eC5PeBjySbXWGK1)*
+*Cheatsheet I made from [Blender Fundamentals](https://www.youtube.com/playlist?list=PLa1F2ddGya_8V90Kd5eC5PeBjySbXWGK1) and [Blender Guru tutorials](https://www.blenderguru.com/tutorials/blender-beginner-tutorial-series)*
 
 ## Shortcuts
 
@@ -36,6 +36,8 @@
 - `H` : hide object (alt+H unhide all) or use scene view on the top right
 - `M` : move object to layer (see layers panel in the bottom)
 - `Ctrl` + `down` : fullscreen 3D view
+- Split view : Drag the top right corner of the view **inside** the view
+- Collpase view : Drag the top right corner over an other view (**outside** the current one)
 
 ### Object Mode :
 - Merge meshes : select objects and `Ctrl`+`J`
@@ -54,11 +56,13 @@
 - `Alt` + `F` : **Fill** with triangles
 - `L` (when hovering object) : Select all vertices **linked** to this object
 - `P` : **Separate** the selected vertices into a new mesh (a new object)
+- Select then `double G` : Moving along the edge
 
 ## Modifiers *(Wrench icon)*
 - Bevels : To round corner, make things more realistic. (Add modifier -> Bevel)
 - Subsurf : Virtually add  points to the mesh, following the curves of the object, to smooth it
 - Mirror : Apply symmetry (Check Merge and Clipping)
+- Solidify : Add Thickness to a mesh
 
 ## Tools
 - Smooth : Tools > Shading > Smooth
