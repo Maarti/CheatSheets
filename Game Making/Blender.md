@@ -23,13 +23,13 @@
 - or C to circle select (wheel to zoom) 
 
 ### Manipulate :
-- G : grab (right clic = cancel)
+- G : grab (right click = cancel)
 - R : rotate (double R for free rotation mode)
 - S : scale
 - Alt + G/R/S : reset to origin
 - X : delete
-- the reticule when we left clic is the spawn point
-- shift + A : add menu (or clic on the left menu)
+- the reticule when we left click is the spawn point
+- shift + A : add menu (or click on the left menu)
 
 ### View :
 - H : hide object (alt+H unhide all) or use scene view on the top right
@@ -43,9 +43,9 @@
 *There is an undo history in object mode and one in edit mode*
 - Shift + C : Reset cursor to origin
 - Ctrl + Tab (in edit mode) : Mesh select mode (face,vertex,edge)
-- E : Extrude tool (or Ctrl+Left clic)
+- E : Extrude tool (or Ctrl+Left click)
 - Ctrl + R : loop cut (add vertices to middle of object)
-- Alt + right clic : select edge loop (created with a loop cut)
+- Alt + right click : select edge loop (created with a loop cut)
 - F : Create face (or edge) from the multiple points selected
 - `Shift+S` : "Cursor to selected" or "Selection to cursor"
 - Select "[Proportional Editing mode](https://docs.blender.org/manual/en/dev/editors/3dview/object/editing/transform/control/proportional_edit.html)" to "Connected" to move nearby elements
