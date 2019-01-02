@@ -74,16 +74,22 @@
 - I : Insert key (place the cursor on the view you want modifications)
 - Change interpolation : Layout "Animation" > select all curves > Key > Interpolation Mode
 - [Walking animation key frames](https://youtu.be/sTo4adwvulE?t=1m18s)
-- Paste reverse animation : `Ctrl+Shift+V`
+- Paste reverse animation : `Ctrl` + `Shift` + `V`
 
-### Rigging/Skinning
-- Shift + A : Add armature
+### Rigging/Skinning ([tutorial](https://www.youtube.com/watch?v=8mZtc33rQ3c))
+- `Shift` + `A` : Add armature
+- In the armature "Data" menu, check `X-Ray`
 - Extrude the tail of the armature
 - Parenting : Select the Object **then** Armature > `Ctrl+P` > "Armature deform with auto weights"
-- `Ctrl+Tab` : Switch to Pose Mode and move the bones
-- Reset bones position : Select bones and `Alt+R`
+- `Ctrl` + `Tab` : Switch to Pose Mode and move the bones
+- Reset bones position : Select bones and `Alt` + `R`
 - Symmetrize bone : Name bone with ".L" or ".R" suffix + select bone + `W` > Symmetrize
 - IK Bone and constraints : [Watch this](https://youtu.be/8mZtc33rQ3c?t=4m14s) : add IK Bone (no parent) + add constraint Inverse kinematic
+
+## [Before exporting to Unity](https://gamedevacademy.org/how-to-import-blender-models-into-unity-your-one-stop-guide/)
+- Delete camera and lamp
+- Apply transforms : `Ctrl` + `A` - Apply rotation and scale
+- Set the origin correctly
 
 ## Useful
 - Lissage : Smooth or Subsurf (apres un lissage, selectionner tous les points et Ctrl+N pour recalculer les normales)
