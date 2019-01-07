@@ -7,12 +7,12 @@
   * Use [`[RuntimeInitializeOnLoadMethod]`](https://docs.unity3d.com/ScriptReference/RuntimeInitializeOnLoadMethodAttribute.html) tu run a method when game is initialized (whithout linking the script to a gameobject)
   * Activate the `Debug` mode in the top right of the inspector to display private variables
   * Generate chart in realtime i nthe inspector with:
-  ```
-  public AnimationCurve curve = new AnimationCurve();
-  void Update() {
-    curve.AddKey(Time.realtimeSinceStartup, Mathf.Sin(Time.time));
-  }
-  ```
+    ```
+    public AnimationCurve curve = new AnimationCurve();
+    void Update() {
+      curve.AddKey(Time.realtimeSinceStartup, Mathf.Sin(Time.time));
+    }
+    ```
   
 
 ## Optimization
