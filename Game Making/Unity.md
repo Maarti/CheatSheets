@@ -1,5 +1,12 @@
 # Unity cheatsheet
 
+## Collider Interqction Matrix
+![Collider Interqction Matrix](img/collider_interaction_matrix.png)
+
+## Tips
+  * Use [[RuntimeInitializeOnLoadMethod]](https://docs.unity3d.com/ScriptReference/RuntimeInitializeOnLoadMethodAttribute.html) tu run a method when game is initialized (whithout linking the script to a gameobject)
+  * It's more efficient to use [CompareTag](https://docs.unity3d.com/ScriptReference/Component.CompareTag.html) than `==`
+
 ## Optimization
 
 ### [UI optimization](https://unity3d.com/fr/how-to/unity-ui-optimization-tips)
