@@ -4,9 +4,9 @@
 ![Collider Interaction Matrix](img/collider_interaction_matrix.png)
 
 ## Tips
-  * Use [`[RuntimeInitializeOnLoadMethod]`](https://docs.unity3d.com/ScriptReference/RuntimeInitializeOnLoadMethodAttribute.html) tu run a method when game is initialized (whithout linking the script to a gameobject)
+  * Use [`[RuntimeInitializeOnLoadMethod]`](https://docs.unity3d.com/ScriptReference/RuntimeInitializeOnLoadMethodAttribute.html) tu run a method when game is initialized (without having to link the script to a gameObject)
   * Activate the `Debug` mode in the top right of the inspector to display private variables
-  * Generate chart in realtime i nthe inspector with:
+  * Generate chart in realtime in the inspector with:
     ```
     public AnimationCurve curve = new AnimationCurve();
     void Update() {

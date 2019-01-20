@@ -69,6 +69,19 @@
 - Remove doubles
 - [Spin](https://docs.blender.org/manual/en/dev/modeling/meshes/editing/duplicating/spin.html) (don't forget to "Remove Doubles")
 
+## Texturing/Unwraping
+### Add texture
+1. Switch to "Cycles Render" mode
+2. Add material => Surface "Diffuse BSDF" => Color "Image texture" and choose file
+3. Switch to "Texture" view mode
+
+### UV Unwrap
+1. Select edges (`Alt`+`Right click`)
+2. `Ctrl`+`E` => "Mark Seam"
+3. `U` => "Unwrap"
+4. Open a second view "UV/Image Editor"
+5. `N` => Check "Stretch" to see where the unwraping is stretched *(try to avoid stretches)*
+
 ## Animation
 ### IKeys / IPO
 - I : Insert key (place the cursor on the view you want modifications)
