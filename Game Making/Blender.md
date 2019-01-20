@@ -69,7 +69,7 @@
 - Remove doubles
 - [Spin](https://docs.blender.org/manual/en/dev/modeling/meshes/editing/duplicating/spin.html) (don't forget to "Remove Doubles")
 
-## Texturing/Unwraping
+## Texturing/Unwrapping
 ### Add texture
 1. Switch to "Cycles Render" mode
 2. Add material => Surface "Diffuse BSDF" => Color "Image texture" and choose file
@@ -78,9 +78,12 @@
 ### UV Unwrap
 1. Select edges (`Alt`+`Right click`)
 2. `Ctrl`+`E` => "Mark Seam"
-3. `U` => "Unwrap"
+3. Select all in Edit Mode (`A`) => `U` => "Unwrap"
 4. Open a second view "UV/Image Editor"
-5. `N` => Check "Stretch" to see where the unwraping is stretched *(try to avoid stretches)*
+5. `N` => Check "Stretch" to see where the unwrapping is stretched *(try to avoid stretches)*
+
+- **Export the UV layout:** in the UV view, go to "UVs" menu => "Export UV Layout"
+- **Painting directly on the object:** After added a texture image, go to "Texture Paint" *(instead of "Edit Mode")*
 
 ## Animation
 ### IKeys / IPO
