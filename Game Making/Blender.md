@@ -38,9 +38,11 @@
 - `Ctrl` + `down` : fullscreen 3D view
 - Split view : Drag the top right corner of the view **inside** the view
 - Collpase view : Drag the top right corner over an other view (**outside** the current one)
+- `Alt` + `B` + select area: "Box view" to display only the selected area (`Alt` + `B` to leave this view)
 
 ### Object Mode :
 - Merge meshes : select objects and `Ctrl`+`J`
+- `Shift`+`D` duplicate
 
 ### Edit Mode :
 *There is an undo history in object mode **and** one in edit mode*
