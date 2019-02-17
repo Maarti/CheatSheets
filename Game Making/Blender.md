@@ -18,8 +18,8 @@
 
 ### Selection :
 - `A` : unselect/select all
-- `B` + `Left click drag` : select
-- `B` + `Middle click drag` : unselect
+- `B` + `Left click drag` : Box select
+- `B` + `Middle click drag` : Box unselect
 - or `C` to circle select (wheel to zoom) 
 
 ### Manipulate :
