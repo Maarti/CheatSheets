@@ -41,8 +41,9 @@
 - `Alt` + `B` + select area: "Box view" to display only the selected area (`Alt` + `B` to leave this view)
 
 ### Object Mode :
-- Merge meshes : select objects and `Ctrl`+`J`
-- `Shift`+`D` duplicate
+- **Merge meshes**: select objects and `Ctrl`+`J`
+- **Duplicate**: `Shift`+`D` 
+- Camera **fly mode**: `Shift`+`F`
 
 ### Edit Mode :
 *There is an undo history in object mode **and** one in edit mode*
