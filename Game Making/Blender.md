@@ -101,6 +101,10 @@
 - `Shift` + `A` : Add armature
 - In the armature "Data" menu, check `X-Ray`
 - Extrude the tail of the armature
+- For the legs and arms:
+    * `Shift`+`A` to add a bone
+	* Select the child (leg) then select `Shift` + select the parent (hips)
+	* Parent them: `Ctrl`+`P` > "Keep offset"
 - Parenting : Select the Object **then** Armature > `Ctrl+P` > "Armature deform with auto weights"
 - `Ctrl` + `Tab` : Switch to Pose Mode and move the bones
 - Reset bones position : Select bones and `Alt` + `R`
