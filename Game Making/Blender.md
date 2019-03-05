@@ -89,32 +89,36 @@
 
 - **Export the UV layout:** in the UV view, go to "UVs" menu => "Export UV Layout"
 - **Painting directly on the object:** After added a texture image, go to "Texture Paint" *(instead of "Edit Mode")*
+- **Sync selection**: Click the "cursor on cube" icon in the "UV/Image Editor"
 
 ## Animation
 ### IKeys / IPO
-- I : Insert key (place the cursor on the view you want modifications)
-- Change interpolation : Layout "Animation" > select all curves > Key > Interpolation Mode
+- I : Insert key (place the cursor on the 3D view)
+- Change interpolation: Layout "Animation" > select all curves > Key > Interpolation Mode
 - [Walking animation key frames](https://youtu.be/sTo4adwvulE?t=1m18s)
-- Paste reverse animation : `Ctrl` + `Shift` + `V`
+- Paste **reverse animation**: (select bones, copy, then) `Ctrl` + `Shift` + `V`
 
 ### Rigging/Skinning ([tutorial](https://www.youtube.com/watch?v=8mZtc33rQ3c))
 - `Shift` + `A` : Add armature
 - In the armature "Data" menu, check `X-Ray`
 - Extrude the tail of the armature
 - For the legs and arms:
-    * `Shift`+`A` to add a bone
+    * `Shift`+`A` to add a bone (in armature, edit mode)
 	* Select the child (leg) then select `Shift` + select the parent (hips)
 	* Parent them: `Ctrl`+`P` > "Keep offset"
 - Parenting : Select the Object **then** Armature > `Ctrl+P` > "Armature deform with auto weights"
 - `Ctrl` + `Tab` : Switch to Pose Mode and move the bones
-- Reset bones position : Select bones and `Alt` + `R`
-- Symmetrize bone : Name bone with ".L" or ".R" suffix + select bone + `W` > Symmetrize
-- IK Bone and constraints : [Watch this](https://youtu.be/8mZtc33rQ3c?t=4m14s) : add IK Bone (no parent) + add constraint Inverse kinematic
+- **Reset bones position** in Pose Mode: Select bones and `Alt` + `R`
+- **Symmetrize** bones: Name bone with ".L" or ".R" suffix + select bone + `W` > Symmetrize
+- IK Bone and constraints: [Watch this](https://youtu.be/8mZtc33rQ3c?t=4m14s) : add IK Bone (no parent) + add constraint Inverse kinematic
+- Select mesh and switch to **Weight Paint** mode. Check "X-Mirror" in the left "Options" tab. Select each bone then adjust its weight.
+- **Recalculate bones roll**: Set view to front `1`, select all bones `A`, `Ctrl`+`N` > "View Axis"
 
 ## [Before exporting to Unity](https://gamedevacademy.org/how-to-import-blender-models-into-unity-your-one-stop-guide/)
 - Delete camera and lamp
 - Apply transforms : `Ctrl` + `A` - Apply rotation and scale
 - Set the origin correctly
+- Recalculate normals: in Edit Mode, select all faces then `Ctrl`+`N`
 
 ## Useful
 - Lissage : Smooth or Subsurf (apres un lissage, selectionner tous les points et Ctrl+N pour recalculer les normales)
