@@ -296,7 +296,7 @@ Une Guard est un service qu'Angular exécutera au moment où l'utilisateur essay
 [Voir cours OpenClassrooms](https://openclassrooms.com/courses/developpez-avec-angular/gerez-la-navigation-avec-le-routing#/id/r-5089287)
 
 ## Observable [[doc](https://angular.io/guide/observables)]
-Objet qui émet des informations auxquelles on souhaite réagir (équivalent Listener).
+Objet qui émet des informations auxquelles on souhaite réagir.
 
 [Cours OpenClassrooms](https://openclassrooms.com/courses/developpez-avec-angular/observez-les-donnees-avec-rxjs#/id/r-5089338)
 
@@ -315,6 +315,31 @@ Un opérateur est une fonction située entre l'Observable et l'Observer qui peut
 ### Reactive [[doc](https://angular.io/guide/reactive-forms)]
 
 
+## Change detection
+By default Angular run change detection on each component. We can optimize it using *immutable objects* and telling Angular to run change detection on a component's subtree *only if its inputs changed* using `ChangeDetectionStrategy.OnPush` (from [this article](https://blog.thoughtram.io/angular/2016/02/22/angular-2-change-detection-explained.html)).
+
+Moreover, we can use *Observables* and `markForCheck()` an entire tree path of the change detection when a change occurs on the Observable:
+```typescript
+@Component({
+  template: '{{counter}}',
+  changeDetection: ChangeDetectionStrategy.OnPush
+})
+class CartBadgeCmp {
+
+  @Input() addItemStream:Observable<any>;
+  counter = 0;
+
+  constructor(private cd: ChangeDetectorRef) {}
+
+  ngOnInit() {
+    this.addItemStream.subscribe(() => {
+      this.counter++; // application state changed
+      this.cd.markForCheck(); // marks path
+    })
+  }
+}
+```
+
 ## [Deploy Angular App on GithubPages](https://alligator.io/angular/deploying-angular-app-github-pages/)
 * First install the angular-cli-ghpages globally : `npm install -g angular-cli-ghpages`
 * Build project with href location : `ng build --prod --base-href "https://<user-name>.github.io/<repo>/"`
@@ -327,16 +352,15 @@ Un opérateur est une fonction située entre l'Observable et l'Observer qui peut
 * Install node_modules folder : `npm install`
 * Run : `npm start`
 
-## Useful
+## Notes
 * Check the version of Angular, typescript, rxjs ... : `ng -v`
 * Updating Angular Version : [Angular Update Guide](https://update.angular.io/)
-* [RXJS v6](https://www.academind.com/learn/javascript/rxjs-6-what-changed/) backward compatibility : `npm install --save rxjs-compat`
 * Quickly display values of a form : 
 ```html
 <form [formGroup]="myForm">
 	<!-- [...] -->
 </form>
-{{ myForm.value | json }}
+<pre>{{ myForm.value | json }}<pre>
 ```
 
 ## Resources
