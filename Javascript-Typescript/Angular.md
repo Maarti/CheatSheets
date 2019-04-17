@@ -316,9 +316,9 @@ Un opérateur est une fonction située entre l'Observable et l'Observer qui peut
 
 
 ## Change detection
-By default Angular run change detection on each component. We can optimize it using *immutable objects* and telling Angular to run change detection on a component's subtree *only if its inputs changed* using `ChangeDetectionStrategy.OnPush` (from [this article](https://blog.thoughtram.io/angular/2016/02/22/angular-2-change-detection-explained.html)).
+By default Angular run change detection on each component. We can optimize it using **immutable objects** and telling Angular to run change detection on a component's subtree **only if its inputs changed** using `ChangeDetectionStrategy.OnPush` (from [this article](https://blog.thoughtram.io/angular/2016/02/22/angular-2-change-detection-explained.html)).
 
-Moreover, we can use *Observables* and `markForCheck()` an entire tree path of the change detection when a change occurs on the Observable:
+Moreover, we can use **Observables** and `markForCheck()` an entire tree path of the change detection when a change occurs on the Observable:
 ```typescript
 @Component({
   template: '{{counter}}',
