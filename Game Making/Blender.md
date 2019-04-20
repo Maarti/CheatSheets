@@ -117,7 +117,7 @@
 ## [Before exporting to Unity](https://gamedevacademy.org/how-to-import-blender-models-into-unity-your-one-stop-guide/)
 - Delete camera and lamp
 - Apply transforms : `Ctrl` + `A` - Apply rotation and scale
-- Set the origin correctly
+- Set the origin correctly (`Shift`+`C` to reset cursor then `Ctrl`+`Alt+`Shift`+C > "Origin to 3D cursor")
 - Recalculate normals: in Edit Mode, select all faces then `Ctrl`+`N`
 
 ## Useful
