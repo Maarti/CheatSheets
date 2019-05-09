@@ -3,6 +3,16 @@
 ## Collider Interaction Matrix
 ![Collider Interaction Matrix](img/collider_interaction_matrix.png)
 
+## UI
+### RectTransform positioning
+[How to set sizeDelta to position a RectTransform on UI](https://stackoverflow.com/a/44474228/5208606)
+
+## Animations
+### Interpolations
+  * [Read this](https://chicounity3d.wordpress.com/2014/05/23/how-to-lerp-like-a-pro/) if you don't want to use plugins
+  * But using [DOTweens](http://dotween.demigiant.com) is really faster (with [this cheasheet](https://easings.net/) of easing functions)
+ 
+
 ## Tips
   * Use [`[RuntimeInitializeOnLoadMethod]`](https://docs.unity3d.com/ScriptReference/RuntimeInitializeOnLoadMethodAttribute.html) tu run a method when game is initialized (without having to link the script to a gameObject)
   * Activate the `Debug` mode in the top right of the inspector to display private variables
@@ -13,6 +23,7 @@
       curve.AddKey(Time.realtimeSinceStartup, Mathf.Sin(Time.time));
     }
     ```
+  
   
 
 ## Optimization

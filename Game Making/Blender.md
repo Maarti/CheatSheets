@@ -96,7 +96,9 @@
 - I : Insert key (place the cursor on the 3D view)
 - Change interpolation: Layout "Animation" > select all curves > Key > Interpolation Mode
 - [Walking animation key frames](https://youtu.be/sTo4adwvulE?t=1m18s)
-- Paste **reverse animation**: (select bones, copy, then) `Ctrl` + `Shift` + `V`
+- Paste **reverse animation**: (select bones, `Ctrl`+`C` then) `Ctrl` + `Shift` + `V`
+- Change animation speed: Go to "Dopesheet Editor", make the first frame the current frame, select all keyframes `A` and scale `S`
+- Copy an animation to another object that has the same armature: `File` > `Append` > Select the file that has the animation > `Action` > Pick the animation
 
 ### Rigging/Skinning ([tutorial](https://www.youtube.com/watch?v=8mZtc33rQ3c))
 - `Shift` + `A` : Add armature
