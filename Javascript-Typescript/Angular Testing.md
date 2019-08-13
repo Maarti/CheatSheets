@@ -31,6 +31,12 @@ To test components with promises, setTimeout(),... wrap the test spec function i
     });
 ```
 
+### Spy on private function
+```
+spyOn<any>(component, 'handleSubscribe');
+expect(component['handleSubscribe']).not.toHaveBeenCalled();
+```
+
 ## Declare Entry Components when testing
 When a component must be declared in `entryComponents` (for example, to test a MatDialog):
 ```typescript

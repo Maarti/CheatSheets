@@ -362,6 +362,16 @@ class CartBadgeCmp {
 </form>
 <pre>{{ myForm.value | json }}<pre>
 ```
+* "Dropping unreachable code" and other imprecise warnings from ng-packagr
+Display the concerned file in the console warning by changing `node_modules/ng-packagr/lib/flatten/uglify.js` line :
+```
+ const result = terser_1.minify(inputFileBuffer.toString(), {
+```
+to 
+```
+ const result = terser_1.minify({ [inputPath]: inputFileBuffer.toString() }, {
+```
+(from [this commit](https://github.com/pfeigl/ng-packagr/commit/5f8b719419419448ab327259a213f57f909ac814) of [this issue](https://github.com/ng-packagr/ng-packagr/issues/882))
 
 ## Resources
 * [Angular Docs](https://angular.io/docs)
