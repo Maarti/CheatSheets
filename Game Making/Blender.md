@@ -87,7 +87,7 @@
 4. Open a second view "UV/Image Editor"
 5. `N` => Check "Stretch" to see where the unwrapping is stretched *(try to avoid stretches)*
 
-- **Export the UV layout:** in the UV view, go to "UVs" menu => "Export UV Layout"
+- **Export the UV layout:** in the UV view, select all (in edit mode), go to "UVs" menu => "Export UV Layout"
 - **Painting directly on the object:** After added a texture image, go to "Texture Paint" *(instead of "Edit Mode")*
 - **Sync selection**: Click the "cursor on cube" icon in the "UV/Image Editor"
 
@@ -98,7 +98,8 @@
 - [Walking animation key frames](https://youtu.be/sTo4adwvulE?t=1m18s)
 - Paste **reverse animation**: (select bones, `Ctrl`+`C` then) `Ctrl` + `Shift` + `V`
 - Change animation speed: Go to "Dopesheet Editor", make the first frame the current frame, select all keyframes `A` and scale `S`
-- Copy an animation to another object that has the same armature: `File` > `Append` > Select the file that has the animation > `Action` > Pick the animation
+- Copy an animation from another object that has the same armature: `File` > `Append` > Select the file that has the animation > `Action` > Pick the animation
+- Delete all animations: In the **Outliner** panel, select **Belender File** mode then delete all under the `Actions` bullet point
 
 ### Rigging/Skinning ([tutorial](https://www.youtube.com/watch?v=8mZtc33rQ3c))
 - `Shift` + `A` : Add armature
