@@ -1,4 +1,4 @@
-# Blender cheatsheet :
+# Blender 2.8 cheatsheet :
 
 *Cheatsheet I made from [Blender Fundamentals](https://www.youtube.com/playlist?list=PLa1F2ddGya_8V90Kd5eC5PeBjySbXWGK1) and [Blender Guru tutorials](https://www.blenderguru.com/tutorials/blender-beginner-tutorial-series)*
 
@@ -21,6 +21,7 @@
 - `B` + `Left click drag` : Box select
 - `B` + `Middle click drag` : Box unselect
 - or `C` to circle select (wheel to zoom) 
+- **Select edge loop**: `Alt` + `Left click`
 
 ### Manipulate :
 - `G` : grab (right click = cancel)
@@ -52,7 +53,7 @@
 - **Extrude** tool: `E` (or `Ctrl`+`Left click`)
 - **Loop cut** (add vertices to middle of object): `Ctrl` + `R`
 - Loop cut **only on a wanted part**: Select all the faces you don't want the cut, hide them with `H` then do loop cut. Unhide with `Alt` + `H`.
-- **Select edge loop** *(created with a loop cut)*: `Alt` + `Right click`
+- **Select edge loop** *(created with a loop cut)*: `Alt` + `Left click`
 - **Create face** (or **edge**) from the multiple points selected: `F`
 - "**Cursor to selected**" or "**Selection to cursor**": `Shift`+ `S`
 - Select "[Proportional Editing mode](https://docs.blender.org/manual/en/dev/editors/3dview/object/editing/transform/control/proportional_edit.html)" to "Connected" to move **nearby elements** *(scroll while moving to change the radius of the proportional editing influence)*
@@ -81,7 +82,7 @@
 3. Switch to "Texture" view mode
 
 ### UV Unwrap
-1. Select edges (`Alt`+`Right click`)
+1. Select edges (`Alt`+`Left click`)
 2. `Ctrl`+`E` => "Mark Seam"
 3. Select all in Edit Mode (`A`) => `U` => "Unwrap"
 4. Open a second view "UV/Image Editor"
@@ -123,8 +124,20 @@
 - Set the origin correctly (`Shift`+`C` to reset cursor then `Ctrl`+`Alt+`Shift`+C > "Origin to 3D cursor")
 - Recalculate normals: in Edit Mode, select all faces then `Ctrl`+`N`
 
+## Sculpt low poly model from scratch
+- [Add image](https://www.dimensions.guide/browse/animals): `Shift`+`A` -> Image -> Background (Rotate it 90° X)
+- **Add Plane**: `Shift`+`A` -> Mesh -> Plane
+- **Front ortographic** view: `1`
+- **Extrude the plane** (`E`) all over the base of model *(no paws, or symetrical members)*
+- **Extrude the whole mesh** towards the camera *(on the Z axis)*
+- **Delete the faces** (`X`) that are at 0° on the Z axis
+- **Apply Rotation**: Switch to Object mode -> `Ctrl`+`A` -> Rotation
+- **Add modifier** *(Wrench icon on the right panel)* -> Mirror -> Check **Y Axis** only and **Clipping**
+- ****
+
+
 ## Useful
-- Lissage : Smooth or Subsurf (apres un lissage, selectionner tous les points et Ctrl+N pour recalculer les normales)
+- Lissage : Smooth or Subsurf (apres un lissage, sélectionner tous les points et Ctrl+N pour recalculer les normales)
 
 <details><summary>List of IOR values for various materials</summary>
 <p>
