@@ -3,6 +3,7 @@
 *Cheatsheet I made from [Blender Fundamentals](https://www.youtube.com/playlist?list=PLa1F2ddGya_8V90Kd5eC5PeBjySbXWGK1) and [Blender Guru tutorials](https://www.blenderguru.com/tutorials/blender-beginner-tutorial-series)*
 
 ## Shortcuts
+Hover anything in the UI and press F1 to display the documentation
 
 ### Camera :
 - `Middle click drag` : rotate camera
@@ -62,7 +63,14 @@
 - Select all vertices **linked** to this object: `L` (when hovering object)
 - `P` : **Separate** the selected vertices into a new mesh (a new object)
 - Select then `double G` : Moving along the edge
-- **Add vertex**: Select edge or face, `W` > `Subdivide`
+- **Add vertex**: Select edge or face, `Right clic` > `Subdivide`
+
+### Sculpt mode:
+- **Opposite effect**: Press `Ctrl` while sculpting to do the opposite effect of current brush
+- **Smoothing**: Press `Shift` while sculpting
+- **Scale** the brush: `F`
+- **Strenght** of the brsuh: `Shift`+`F`
+
 
 ## Modifiers *(Wrench icon)*
 - Bevels : To round corner, make things more realistic. (Add modifier -> Bevel)
@@ -113,7 +121,7 @@
 - Parenting : Select the Object **then** Armature > `Ctrl+P` > "Armature deform with auto weights"
 - `Ctrl` + `Tab` : Switch to Pose Mode and move the bones
 - **Reset bones position** in Pose Mode: Select bones and `Alt` + `R`
-- **Symmetrize** bones: Name bone with ".L" or ".R" suffix + select bone + `W` > Symmetrize
+- **Symmetrize** bones: Name bone with ".L" or ".R" suffix + select bone + `Right clic` > Symmetrize
 - IK Bone and constraints: [Watch this](https://youtu.be/8mZtc33rQ3c?t=4m14s) : add IK Bone (no parent) + add constraint Inverse kinematic
 - Select mesh and switch to **Weight Paint** mode. Check "X-Mirror" in the left "Options" tab. Select each bone then adjust its weight.
 - **Recalculate bones roll**: Set view to front `1`, select all bones `A`, `Ctrl`+`N` > "View Axis"
@@ -132,8 +140,9 @@
 - **Extrude the whole mesh** towards the camera *(on the Z axis)*
 - **Delete the faces** (`X`) that are at 0° on the Z axis
 - **Apply Rotation**: Switch to Object mode -> `Ctrl`+`A` -> Rotation
-- **Add modifier** *(Wrench icon on the right panel)* -> Mirror -> Check **Y Axis** only and **Clipping**
-- ****
+- **Add modifier** *(Wrench icon on the right panel)* -> Mirror -> Check **X Axis** only and **Clipping**
+- **Add a loop cut** on the Y axis for the legs (`Ctrl`+`R`)
+- **Extrude the legs**
 
 
 ## Useful
