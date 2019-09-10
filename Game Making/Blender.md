@@ -49,7 +49,7 @@ Hover anything in the UI and press F1 to display the documentation
 
 ### Edit Mode :
 *There is an undo history in object mode **and** one in edit mode*
-- **Reset cursor** to origin: `Shift` + `C`
+- **Reset cursor** to origin: `Shift` + `C` (`Shift` + `S` for the contextual menu)
 - Mesh **select mode** (face,vertex,edge): `Ctrl` + `Tab` (in edit mode) :
 - **Extrude** tool: `E` (or `Ctrl`+`Left click`)
 - **Loop cut** (add vertices to middle of object): `Ctrl` + `R`
@@ -112,11 +112,11 @@ Hover anything in the UI and press F1 to display the documentation
 
 ### Rigging/Skinning ([tutorial](https://www.youtube.com/watch?v=8mZtc33rQ3c))
 - `Shift` + `A` : Add armature
-- In the armature "Data" menu, check `X-Ray`
+- In the armature "Object Data" menu, check `In Front`
 - Extrude the tail of the armature
 - For the legs and arms:
     * `Shift`+`A` to add a bone (in armature, edit mode)
-	* Select the child (leg) then select `Shift` + select the parent (hips)
+	* Select the child (leg) then `Shift` + select the parent (hips)
 	* Parent them: `Ctrl`+`P` > "Keep offset"
 - Parenting : Select the Object **then** Armature > `Ctrl+P` > "Armature deform with auto weights"
 - `Ctrl` + `Tab` : Switch to Pose Mode and move the bones
@@ -125,6 +125,18 @@ Hover anything in the UI and press F1 to display the documentation
 - IK Bone and constraints: [Watch this](https://youtu.be/8mZtc33rQ3c?t=4m14s) : add IK Bone (no parent) + add constraint Inverse kinematic
 - Select mesh and switch to **Weight Paint** mode. Check "X-Mirror" in the left "Options" tab. Select each bone then adjust its weight.
 - **Recalculate bones roll**: Set view to front `1`, select all bones `A`, `Ctrl`+`N` > "View Axis"
+
+
+## [Normal map baking](https://docs.blender.org/manual/en/2.80/render/cycles/baking.html#bpy-types-bakesettings)
+- Make a high poly version of your low poly model (with the exact same origin)
+- Sculpt the high poly version
+- Select the low poly and add an image node to it's material (for the normal map)
+- Select the **High Poly first** THEN the low poly, go to "Render" left tab, "Bake Type: Normal", check "Selected ot active", click Bake
+- If there are green parts in the normal map, adjust the Ray Distance or use a Cage
+
+> Blender bake using a ray casting. If the ray distance is 0, the ray starts from the lowpoly surface. So, if this surface is inside the highpoly mesh, the ray meets nothing.
+> With a higher value for the ray distance the ray starts farther to the outside of the lowpoly so that it can hit the highpoly surface.
+> Practically speaking you may need to tune this value (not too high, not to low) so that the ray does not hit unwanted surfaces of the highpoly mesh.
 
 ## [Before exporting to Unity](https://gamedevacademy.org/how-to-import-blender-models-into-unity-your-one-stop-guide/)
 - Delete camera and lamp
