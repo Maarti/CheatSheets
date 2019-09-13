@@ -126,6 +126,14 @@ Hover anything in the UI and press F1 to display the documentation
 - Select mesh and switch to **Weight Paint** mode. Check "X-Mirror" in the left "Options" tab. Select each bone then adjust its weight.
 - **Recalculate bones roll**: Set view to front `1`, select all bones `A`, `Ctrl`+`N` > "View Axis"
 
+### Bones constraints
+- **Extrude** a new bone from the **ankle** to the rear *(name it Target)*, uncheck "Deform") and `Alt`+`P` > Clear Parent
+- **Extrude** a new bone from the **knee** to the rear *(name it Pole)*, uncheck "Deform" and `Alt`+`P` > Clear Parent
+- Switch to **pose mode**, select the last leg bone (before the foot), then in "Bone Contraint" tab, add "Inverse Kinematic"
+- Set "Chain length" to the number of bones in the chain (from the root)
+- Set the **Target** and the **Pole** to the previously created bones
+- Adjust the Pole Angle (usually 90°)
+
 
 ## [Normal map baking](https://docs.blender.org/manual/en/2.80/render/cycles/baking.html#bpy-types-bakesettings)
 - Make a high poly version of your low poly model (with the exact same origin)
