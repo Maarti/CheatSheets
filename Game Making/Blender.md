@@ -126,13 +126,20 @@ Hover anything in the UI and press F1 to display the documentation
 - Select mesh and switch to **Weight Paint** mode. Check "X-Mirror" in the left "Options" tab. Select each bone then adjust its weight.
 - **Recalculate bones roll**: Set view to front `1`, select all bones `A`, `Ctrl`+`N` > "View Axis"
 
-### Bones constraints
+### [Bones constraints](https://youtu.be/Q9f-WVs3ghI?t=301)
 - **Extrude** a new bone from the **ankle** to the rear *(name it Target)*, uncheck "Deform") and `Alt`+`P` > Clear Parent
 - **Extrude** a new bone from the **knee** to the rear *(name it Pole)*, uncheck "Deform" and `Alt`+`P` > Clear Parent
-- Switch to **pose mode**, select the last leg bone (before the foot), then in "Bone Contraint" tab, add "Inverse Kinematic"
+- Switch to **pose mode**, select the last leg bone (Leg02) (before the foot), then in "Bone Contraint" tab, add "Inverse Kinematic"
 - Set "Chain length" to the number of bones in the chain (from the root)
 - Set the **Target** and the **Pole** to the previously created bones
 - Adjust the Pole Angle (usually 90°)
+
+- Create a bone under the foot (no parent, not deform) *(name it Foot_Ctlr)*, at the level of the ground (Z=0)
+- Parent the *Target* bone to the *Ctrlr* bone (Select Target, Shift+Select Ctrlr, `Ctrl`+`P` > Keep offset)
+- Parent the *Foot* bone to the *Ctrlr* bone
+- In pose mode, select *Leg02* (before the foot), shift+select the foot, `Shift`+`Ctrl`+`C` (add constraints) > Copy Location
+- In the constraints settings, set Head/Tail to Tail
+- Hide all the leg bones except the Ctrlr
 
 
 ## [Normal map baking](https://docs.blender.org/manual/en/2.80/render/cycles/baking.html#bpy-types-bakesettings)
