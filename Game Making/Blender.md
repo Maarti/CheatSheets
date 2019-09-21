@@ -46,6 +46,7 @@ Hover anything in the UI and press F1 to display the documentation
 - **Merge meshes**: select objects and `Ctrl`+`J`
 - **Duplicate**: `Shift`+`D` 
 - Camera **fly mode**: `Shift`+`F`
+- **Prefab**: `Alt`+`D` (create a new instance of an object instead of a duplicate)
 
 ### Edit Mode :
 *There is an undo history in object mode **and** one in edit mode*
@@ -64,6 +65,7 @@ Hover anything in the UI and press F1 to display the documentation
 - `P` : **Separate** the selected vertices into a new mesh (a new object)
 - Select then `double G` : Moving along the edge
 - **Add vertex**: Select edge or face, `Right clic` > `Subdivide`
+- **Merge 2 shapes**: Select 2 edge loops, `Right clic` > `Bridge Edge Loops`
 
 ### Sculpt mode:
 - **Opposite effect**: Press `Ctrl` while sculpting to do the opposite effect of current brush
@@ -110,6 +112,10 @@ Hover anything in the UI and press F1 to display the documentation
 - Copy an animation from another object that has the same armature: `File` > `Append` > Select the file that has the animation > `Action` > Pick the animation
 - Delete all animations: In the **Outliner** panel, select **Belender File** mode then delete all under the `Actions` bullet point
 
+Keyframes of [quadruped animation](https://youtu.be/yl3IX6hgNss?t=226):
+![walking keyframes](/Game Making/img/quadruped_walking_keyframes.png)
+Keyframes of [quadruped up and down body](https://youtu.be/INQx-Lzs8mU?t=47) while walking:
+
 ### Rigging/Skinning ([tutorial](https://www.youtube.com/watch?v=8mZtc33rQ3c))
 - `Shift` + `A` : Add armature
 - In the armature "Object Data" menu, check `In Front`
@@ -133,6 +139,7 @@ Hover anything in the UI and press F1 to display the documentation
 - Set "Chain length" to the number of bones in the chain (from the root)
 - Set the **Target** and the **Pole** to the previously created bones
 - Adjust the Pole Angle (usually 90°)
+
 
 - Create a bone under the foot (no parent, not deform) *(name it Foot_Ctlr)*, at the level of the ground (Z=0)
 - Parent the *Target* bone to the *Ctrlr* bone (Select Target, Shift+Select Ctrlr, `Ctrl`+`P` > Keep offset)
