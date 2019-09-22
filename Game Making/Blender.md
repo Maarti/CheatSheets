@@ -113,7 +113,9 @@ Hover anything in the UI and press F1 to display the documentation
 - Delete all animations: In the **Outliner** panel, select **Belender File** mode then delete all under the `Actions` bullet point
 
 Keyframes of [quadruped animation](https://youtu.be/yl3IX6hgNss?t=226):
-![walking keyframes](/Game Making/img/quadruped_walking_keyframes.png)
+
+![walking keyframes](img/quadruped_walking_keyframes.png)
+
 Keyframes of [quadruped up and down body](https://youtu.be/INQx-Lzs8mU?t=47) while walking:
 
 ### Rigging/Skinning ([tutorial](https://www.youtube.com/watch?v=8mZtc33rQ3c))
@@ -177,6 +179,10 @@ Keyframes of [quadruped up and down body](https://youtu.be/INQx-Lzs8mU?t=47) whi
 - **Add modifier** *(Wrench icon on the right panel)* -> Mirror -> Check **X Axis** only and **Clipping**
 - **Add a loop cut** on the Y axis for the legs (`Ctrl`+`R`)
 - **Extrude the legs**
+
+## [Shader](https://www.blenderguru.com/tutorials/2017/6/21/how-to-use-blenders-new-ultimate-shader-principled-bsdf)
+- Metallic: It's 0 or 1 (is it metallic or not?)
+- Roughness: 0 = lot of reflection ; 1 = No reflection
 
 
 ## Useful
