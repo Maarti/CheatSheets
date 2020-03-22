@@ -105,12 +105,12 @@ Hover anything in the UI and press F1 to display the documentation
 ## Animation
 ### IKeys / IPO
 - I : Insert key (place the cursor on the 3D view)
-- Change interpolation: Layout "Animation" > select all curves > Key > Interpolation Mode
+- Change **interpolation**: Layout "Animation" > select all curves > Key > Interpolation Mode
 - [Walking animation key frames](https://youtu.be/sTo4adwvulE?t=1m18s)
 - Paste **reverse animation**: (select bones, `Ctrl`+`C` then) `Ctrl` + `Shift` + `V`
-- Change animation speed: Go to "Dopesheet Editor", make the first frame the current frame, select all keyframes `A` and scale `S`
-- Copy an animation from another object that has the same armature: `File` > `Append` > Select the file that has the animation > `Action` > Pick the animation
-- Delete all animations: In the **Outliner** panel, select **Belender File** mode then delete all under the `Actions` bullet point
+- Change animation **speed**: Go to "Dopesheet Editor", make the first frame the current frame, select all keyframes `A` and scale `S`
+- **Copy** an animation from another object that has the same armature: `File` > `Append` > Select the file that has the animation > `Action` > Pick the animation
+- **Delete** all animations: In the **Outliner** panel, select **Blender File** mode then delete all under the `Actions` bullet point
 
 Keyframes of [quadruped animation](https://youtu.be/yl3IX6hgNss?t=226):
 
@@ -126,7 +126,7 @@ Keyframes of [quadruped up and down body](https://youtu.be/INQx-Lzs8mU?t=47) whi
     * `Shift`+`A` to add a bone (in armature, edit mode)
 	* Select the child (leg) then `Shift` + select the parent (hips)
 	* Parent them: `Ctrl`+`P` > "Keep offset"
-- Parenting : Select the Object **then** Armature > `Ctrl+P` > "Armature deform with auto weights"
+- Parenting : Select the Mesh Object **then** Armature > `Ctrl+P` > "Armature deform with auto weights"
 - `Ctrl` + `Tab` : Switch to Pose Mode and move the bones
 - **Reset bones position** in Pose Mode: Select bones and `Alt` + `R`
 - **Symmetrize** bones: Name bone with ".L" or ".R" suffix + select bone + `Right clic` > Symmetrize
@@ -168,17 +168,22 @@ Keyframes of [quadruped up and down body](https://youtu.be/INQx-Lzs8mU?t=47) whi
 - Set the origin correctly (`Shift`+`C` to reset cursor then `Ctrl`+`Alt+`Shift`+C > "Origin to 3D cursor")
 - Recalculate normals: in Edit Mode, select all faces then `Ctrl`+`N`
 
-## Sculpt low poly model from scratch
+## Sculpt low poly character from scratch
 - [Add image](https://www.dimensions.guide/browse/animals): `Shift`+`A` -> Image -> Background (Rotate it 90° X)
 - **Add Plane**: `Shift`+`A` -> Mesh -> Plane
-- **Front ortographic** view: `1`
-- **Extrude the plane** (`E`) all over the base of model *(no paws, or symetrical members)*
+- **Left ortographic** view: `3` `9`
+- **Extrude the plane** (`E`) all over the base of model *(no legs, or symetrical members)*
 - **Extrude the whole mesh** towards the camera *(on the Z axis)*
 - **Delete the faces** (`X`) that are at 0° on the Z axis
 - **Apply Rotation**: Switch to Object mode -> `Ctrl`+`A` -> Rotation
 - **Add modifier** *(Wrench icon on the right panel)* -> Mirror -> Check **X Axis** only and **Clipping**
 - **Add a loop cut** on the Y axis for the legs (`Ctrl`+`R`)
 - **Extrude the legs**
+
+- F3 => Shade flat 	
+
+## Texture Paint
+- **Paint Mask**: Click the "square icon" in top left in Texture Paint view. Switch to Edit mode, select faces you want to paint, switch to object mode, paint.
 
 ## [Shader](https://www.blenderguru.com/tutorials/2017/6/21/how-to-use-blenders-new-ultimate-shader-principled-bsdf)
 - Metallic: It's 0 or 1 (is it metallic or not?)
