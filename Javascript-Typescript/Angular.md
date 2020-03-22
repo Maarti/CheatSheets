@@ -340,6 +340,34 @@ class CartBadgeCmp {
 }
 ```
 
+
+## Create customizable component with directives
+
+Generate directive:
+```
+ng g d shared\directive\modal\modalTitle
+```
+
+In the customizable component template, position the modalTitle:
+```
+<ng-container *ngTemplateOutlet="modalTitle"></ng-container>
+<ng-content></ng-content>
+```
+
+Select the content thanks to the directive:
+```typescript
+@ContentChild(ModalTitleDirective, { static: false, read: TemplateRef }) public modalTitle: TemplateRef<any>;
+```
+
+In the implementation, use the directive in the content of the customizable component:
+```html
+<my-modal>
+  <ng-template modalTitle> The title </ng-template>
+  The body
+</my-modal>
+```
+
+
 ## [Deploy Angular App on GithubPages](https://alligator.io/angular/deploying-angular-app-github-pages/)
 * First install the angular-cli-ghpages globally : `npm install -g angular-cli-ghpages`
 * Build project with href location : `ng build --prod --base-href "https://<user-name>.github.io/<repo>/"`
