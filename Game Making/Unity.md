@@ -23,6 +23,8 @@
       curve.AddKey(Time.realtimeSinceStartup, Mathf.Sin(Time.time));
     }
     ```
+  * `Shift`+`F` to lock camera on an object in scene view
+  * Add `[SelectionBase]` to a class to target this gameobject while clicking it in the scene view (instead of children)
   
   
 
