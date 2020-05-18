@@ -128,13 +128,13 @@ Keyframes of [quadruped up and down body](https://youtu.be/INQx-Lzs8mU?t=47) whi
 	* Parent them: `Ctrl`+`P` > "Keep offset"
 - For a [quadruped](https://youtu.be/0IB5KCPmEEI?t=245), 5 bones for the front legs, 4 bones for the rear legs (see the image below)
 - Name the bones with `.L` (or `.R`) suffix to symmetrize them
-- Select the bones, menu `Armature` => `Symmetrize`
+- **Symmetrize** bones: Name bone with ".L" or ".R" suffix, select the bones, menu `Armature` => `Symmetrize` (do the bone constraints before)
 - Parenting : Select the Mesh Object **then** Armature > `Ctrl+P` > "Armature deform with auto weights"
-- `Ctrl` + `Tab` : Switch to Pose Mode and move the bones
+- `Ctrl` + `Tab` : Switch to Pose Mode and move the bonesg
 - **Reset bones position** in Pose Mode: Select bones and `Alt` + `R`
-- **Symmetrize** bones: Name bone with ".L" or ".R" suffix + select bone + `Right clic` > Symmetrize
+
 - IK Bone and constraints: [Watch this](https://youtu.be/8mZtc33rQ3c?t=4m14s) : add IK Bone (no parent) + add constraint Inverse kinematic
-- Select mesh and switch to **Weight Paint** mode. Check "X-Mirror" in the left "Options" tab. Select each bone then adjust its weight.
+- Select Armature then shift+select mesh and switch to **Weight Paint** mode. Activate the symmetry in the right "Tool" tab. Select each bone (by Shift clicking it) then adjust its weight.
 - **Recalculate bones roll**: Set view to front `1`, select all bones `A`, `Shift`+`N` > "View Axis"
 
 ![quadruped rig](img/quadruped_rig.png)
@@ -163,6 +163,14 @@ Legs IK (prevent dislocation):
 - Clear parent of Head.Target, parent it to the shoulder base instead (so the head will move when the base move)
 - Add IK constraint to the Neck (etc...)
 - Select Neck, shift+select Head,  `Shift`+`Ctrl`+`C` > Copy Location > slide Head/Tail to Tail
+
+[Tail IK](https://youtu.be/0IB5KCPmEEI?t=951) (wiggle effect):
+- Duplicate Tail01, name it Tail.Ctrl then scale it up to the tail size
+- Parent Tail01 to Tail.Ctrl
+- Select Tail.Ctrl, shift+select Tail02,  `Shift`+`Ctrl`+`C` > Copy Rotation (repeat for each tail bone and adjust the influence value)
+
+Settings:
+- To adjust the min/max rotation of each bone, adjust the settings under "Inverse Kinematic" in the bone tab
 
 
 ## [Normal map baking](https://docs.blender.org/manual/en/2.80/render/cycles/baking.html#bpy-types-bakesettings)
