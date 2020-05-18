@@ -126,18 +126,21 @@ Keyframes of [quadruped up and down body](https://youtu.be/INQx-Lzs8mU?t=47) whi
     * `Shift`+`A` to add a bone (in armature, edit mode)
 	* Select the child (leg) then `Shift` + select the parent (hips)
 	* Parent them: `Ctrl`+`P` > "Keep offset"
+- For a quadruped, 5 bones for the front legs, 4 bones for the rear legs (see the image below)
 - Parenting : Select the Mesh Object **then** Armature > `Ctrl+P` > "Armature deform with auto weights"
 - `Ctrl` + `Tab` : Switch to Pose Mode and move the bones
 - **Reset bones position** in Pose Mode: Select bones and `Alt` + `R`
 - **Symmetrize** bones: Name bone with ".L" or ".R" suffix + select bone + `Right clic` > Symmetrize
 - IK Bone and constraints: [Watch this](https://youtu.be/8mZtc33rQ3c?t=4m14s) : add IK Bone (no parent) + add constraint Inverse kinematic
 - Select mesh and switch to **Weight Paint** mode. Check "X-Mirror" in the left "Options" tab. Select each bone then adjust its weight.
-- **Recalculate bones roll**: Set view to front `1`, select all bones `A`, `Ctrl`+`N` > "View Axis"
+- **Recalculate bones roll**: Set view to front `1`, select all bones `A`, `Shift`+`N` > "View Axis"
+
+![quadruped rig](img/quadruped_rig.png)
 
 ### [Bones constraints](https://youtu.be/Q9f-WVs3ghI?t=301)
 - **Extrude** a new bone from the **ankle** to the rear *(name it Target)*, uncheck "Deform") and `Alt`+`P` > Clear Parent
 - **Extrude** a new bone from the **knee** to the rear *(name it Pole)*, uncheck "Deform" and `Alt`+`P` > Clear Parent
-- Switch to **pose mode**, select the last leg bone (Leg02) (before the foot), then in "Bone Contraint" tab, add "Inverse Kinematic"
+- Switch to **pose mode**, select the last leg bone (Leg02?) (before the foot), then in "Bone Contraint" tab, add "Inverse Kinematic"
 - Set "Chain length" to the number of bones in the chain (from the root)
 - Set the **Target** and the **Pole** to the previously created bones
 - Adjust the Pole Angle (usually 90°)
