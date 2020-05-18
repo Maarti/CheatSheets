@@ -126,7 +126,9 @@ Keyframes of [quadruped up and down body](https://youtu.be/INQx-Lzs8mU?t=47) whi
     * `Shift`+`A` to add a bone (in armature, edit mode)
 	* Select the child (leg) then `Shift` + select the parent (hips)
 	* Parent them: `Ctrl`+`P` > "Keep offset"
-- For a quadruped, 5 bones for the front legs, 4 bones for the rear legs (see the image below)
+- For a [quadruped](https://youtu.be/0IB5KCPmEEI?t=245), 5 bones for the front legs, 4 bones for the rear legs (see the image below)
+- Name the bones with `.L` (or `.R`) suffix to symmetrize them
+- Select the bones, menu `Armature` => `Symmetrize`
 - Parenting : Select the Mesh Object **then** Armature > `Ctrl+P` > "Armature deform with auto weights"
 - `Ctrl` + `Tab` : Switch to Pose Mode and move the bones
 - **Reset bones position** in Pose Mode: Select bones and `Alt` + `R`
@@ -138,20 +140,29 @@ Keyframes of [quadruped up and down body](https://youtu.be/INQx-Lzs8mU?t=47) whi
 ![quadruped rig](img/quadruped_rig.png)
 
 ### [Bones constraints](https://youtu.be/Q9f-WVs3ghI?t=301)
+Legs Inverse Kinematic:
 - **Extrude** a new bone from the **ankle** to the rear *(name it Target)*, uncheck "Deform") and `Alt`+`P` > Clear Parent
-- **Extrude** a new bone from the **knee** to the rear *(name it Pole)*, uncheck "Deform" and `Alt`+`P` > Clear Parent
+- **Extrude** a new bone from the **knee** to the front *(name it Pole)*, uncheck "Deform" and `Alt`+`P` > Clear Parent
 - Switch to **pose mode**, select the last leg bone (Leg02?) (before the foot), then in "Bone Contraint" tab, add "Inverse Kinematic"
 - Set "Chain length" to the number of bones in the chain (from the root)
 - Set the **Target** and the **Pole** to the previously created bones
 - Adjust the Pole Angle (usually 90°)
 
-
+Legs IK (prevent dislocation):
 - Create a bone under the foot (no parent, not deform) *(name it Foot_Ctlr)*, at the level of the ground (Z=0)
 - Parent the *Target* bone to the *Ctrlr* bone (Select Target, Shift+Select Ctrlr, `Ctrl`+`P` > Keep offset)
 - Parent the *Foot* bone to the *Ctrlr* bone
-- In pose mode, select *Leg02* (before the foot), shift+select the foot, `Shift`+`Ctrl`+`C` (add constraints) > Copy Location
-- In the constraints settings, set Head/Tail to Tail
+- In pose mode, select *Leg02* (before the foot), shift+select the foot, `Shift`+`Ctrl`+`C` (add constraints with targets) > Copy Location
+- In the constraints settings, slide Head/Tail to Tail
 - Hide all the leg bones except the Ctrlr
+
+[Head IK](https://youtu.be/0IB5KCPmEEI?t=809):
+- Duplicate Head bone (same position), name it Head.Target
+- Scale down the real Head bone
+- Parent Head to Head.Target
+- Clear parent of Head.Target, parent it to the shoulder base instead (so the head will move when the base move)
+- Add IK constraint to the Neck (etc...)
+- Select Neck, shift+select Head,  `Shift`+`Ctrl`+`C` > Copy Location > slide Head/Tail to Tail
 
 
 ## [Normal map baking](https://docs.blender.org/manual/en/2.80/render/cycles/baking.html#bpy-types-bakesettings)
