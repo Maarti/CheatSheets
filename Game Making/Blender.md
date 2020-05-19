@@ -189,6 +189,10 @@ Settings:
 - Apply transforms : `Ctrl` + `A` - Apply rotation and scale
 - Set the origin correctly (`Shift`+`C` to reset cursor then `Ctrl`+`Alt+`Shift`+C > "Origin to 3D cursor")
 - Recalculate normals: in Edit Mode, select all faces then `Ctrl`+`N`
+- Export Settigns:
+  - "Selected objects"
+  - "Apply scale: **FBX All**"
+  - !EXPERIMENTAL! Apply Transform
 
 ## Sculpt low poly character from scratch
 - [Add image](https://www.dimensions.guide/browse/animals): `Shift`+`A` -> Image -> Background (Rotate it 90° X)
