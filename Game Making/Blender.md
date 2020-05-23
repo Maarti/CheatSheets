@@ -115,7 +115,11 @@ Hover anything in the UI and press F1 to display the documentation
 Keyframes of [quadruped animation](https://youtu.be/yl3IX6hgNss?t=226):
 
 ![walking keyframes](img/quadruped_walking_keyframes.png)
+
+Troting (up on frames 3 and 7, down on frames 1 and 5)
 ![troting keyframes](img/quadruped_troting_keyframes.png)
+
+![runnin keyframes](img/quadruped_running_keyframes.png)
 
 Keyframes of [quadruped up and down body](https://youtu.be/INQx-Lzs8mU?t=47) while walking:
 
