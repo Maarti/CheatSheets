@@ -194,7 +194,8 @@ Settings:
 - Apply transforms : `Ctrl` + `A` - Apply rotation and scale
 - Set the origin correctly (`Shift`+`C` to reset cursor then `Ctrl`+`Alt+`Shift`+C > "Origin to 3D cursor")
 - Recalculate normals: in Edit Mode, select all faces then `Ctrl`+`N`
-- Export Settigns:
+- Reset the pose mode and select the `_default` pose (create a `_default` pose with just one frame in the normal position. Start with an underscore so it will be first in alphabetic order and Unity will show it as a default pose).
+- Export Settings:
   - "Selected objects"
   - "Apply scale: **FBX All**"
   - !EXPERIMENTAL! Apply Transform
