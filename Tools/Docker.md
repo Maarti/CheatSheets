@@ -1,7 +1,7 @@
 # Docker cheatsheet
 
-image filesystem
- host’s filesystem
+- image filesystem
+- host's filesystem
 
 Clone a project with a `Dockerfile` file (= instructions how to assemble the private filesystem)
 
