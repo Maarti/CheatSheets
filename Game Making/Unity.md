@@ -11,7 +11,10 @@
 ### Interpolations
   * [Read this](https://chicounity3d.wordpress.com/2014/05/23/how-to-lerp-like-a-pro/) if you don't want to use plugins
   * But using [DOTweens](http://dotween.demigiant.com) is really faster (with [this cheasheet](https://easings.net/) of easing functions)
- 
+
+## Terrain
+  * To make the texture more organic, duplicate the terrain layer, keep the same texture but change the offset and paint over the existing layer. ([see video](https://youtu.be/PDKZXjyhwh0?t=2867))
+  * [Shortcuts](https://docs.unity3d.com/Packages/com.unity.terrain-tools@1.1/manual/brush-controls-shortcut-keys.html) `A`, `S`, `D` to quickly change strength, scale and rotation
 
 ## Tips
   * Use [`[RuntimeInitializeOnLoadMethod]`](https://docs.unity3d.com/ScriptReference/RuntimeInitializeOnLoadMethodAttribute.html) tu run a method when game is initialized (without having to link the script to a gameObject)
@@ -32,6 +35,26 @@
 
 ### Script Optimization
   * It's more efficient to use [`gameObject.CompareTag`](https://docs.unity3d.com/ScriptReference/Component.CompareTag.html) than `==`
+  * Disable component when Update/FixedUpdate is unecessary (OnTriggerEnter stil works)
+  ```csharp
+  void Awake () {
+		enabled = false;
+	}
+
+	void FixedUpdate () {
+		// ...
+	}
+
+	void OnTriggerEnter (Collider other) {
+		// ...
+		enabled = true;
+	}
+
+	void OnTriggerExit (Collider other) {
+		// ...
+		enabled = false;
+	}
+	```
   
 ### [UI optimization](https://unity3d.com/fr/how-to/unity-ui-optimization-tips)
 
