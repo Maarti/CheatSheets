@@ -221,6 +221,10 @@ Settings:
 - Metallic: It's 0 or 1 (is it metallic or not?)
 - Roughness: 0 = lot of reflection ; 1 = No reflection
 
+## Addons
+- F2: to fill gaps
+- LoopTools
+
 
 ## Useful
 - Lissage : Smooth or Subsurf (apres un lissage, sélectionner tous les points et Ctrl+N pour recalculer les normales)
