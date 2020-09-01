@@ -71,6 +71,29 @@ When a component must be declared in `entryComponents` (for example, to test a M
   }));
 ```
 
+## Expecting value inside a subscribe
+Add the `done()` parameter and call it at the end of the `subscribe()`
+```
+it("should fail", (done) => {
+    // ...
+    obs.subscribe((value) => {        
+        expect(true).toBe(false);
+        done();
+    });
+});
+```
+
+## NGRX
+### Testing side effect of an Effect
+Important part: the `actions$` must be a `of()` and not a `hot()` to resolve instantly
+```
+it('should call the getData() method', () => {
+  actions$ = of(action());
+  service.getData = jest.fn();
+  effects.loadData$.subscribe();
+  expect(service.getData).toHaveBeenCalledWith('id');
+});
+```
 
 
 ## Resources
