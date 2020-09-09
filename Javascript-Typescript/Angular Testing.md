@@ -82,6 +82,18 @@ it("should fail", (done) => {
     });
 });
 ```
+Or [return a promise](https://github.com/jest-community/eslint-plugin-jest/issues/494#issuecomment-562094733)
+```
+it("should fail", () => {
+    // ...
+    return new Promise(resolve => {
+	    obs.subscribe((value) => {        
+           expect(true).toBe(false);
+           resolve();
+        });
+    });
+});
+```
 
 ## NGRX
 ### Testing side effect of an Effect
