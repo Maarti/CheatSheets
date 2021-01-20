@@ -61,6 +61,10 @@
 * **Diviser les canvas entre statiques et dynamiques**. Lorsqu'un élément du canvas change, tout le canvas est re-dessiné. [Source](https://youtu.be/_wxitgdx-UI?t=23m36s)
 * Désactiver `Raycast Target` pour les éléments statiques ou non-interactifs.
 
+
+## VFX Graph
+[Making fire from smoke](https://youtu.be/OCzGXcdyqnQ?t=289)
+
 ## Logcat
 **Use adb logcat :**
 See [doc](https://developers.google.com/admob/android/test-ads)

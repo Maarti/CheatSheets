@@ -2,12 +2,13 @@
 # Angular Testing cheatsheet
 
 ## [Testing asynchronous code](https://angular.io/guide/testing#async-test-with-async)
-To test components with promises, setTimeout(),... wrap the test spec function in a `async` function and execute the tests when the `whenStable` promise resolves.
+To test components with promises, setTimeout(),... wrap the test spec function in a `fakeAsync` function and execute the tests when the `whenStable` promise resolves.
 ```typescript
-    it('should refresh the paginator', async(() => {
+    it('should refresh the paginator', fakeAsync(() => {
       const calculationsLength = component.calculations.length;
       expect(component.paginator.length).toBe(calculationsLength);
       component.calculations.splice(0, 1);
+	  tick(500);
       component.refreshData();
       fixture.whenStable().then(() => {
         fixture.detectChanges();

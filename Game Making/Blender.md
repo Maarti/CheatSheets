@@ -123,6 +123,8 @@ Troting (up on frames 3 and 7, down on frames 1 and 5)
 
 Keyframes of [quadruped up and down body](https://youtu.be/INQx-Lzs8mU?t=47) while walking:
 
+[Dog Run Cycle](https://www.youtube.com/watch?v=6uB2a2K6HGI)
+
 ### Rigging/Skinning ([tutorial](https://www.youtube.com/watch?v=8mZtc33rQ3c))
 - `Shift` + `A` : Add armature
 - In the armature "Object Data" menu, check `In Front`
