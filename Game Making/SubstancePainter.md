@@ -5,5 +5,11 @@
 ## Shortcuts
 
 ### Camera
-* `Alt + Left/Mid/Right Mouse`: Rotate / Move / Zoom
-* `Shift + Right Mouse Drag`: Rotate scene lighting
+* Rotate / Move / Zoom: `Alt + Left/Mid/Right Mouse`
+* Rotate scene lighting: `Shift + Right Mouse Drag`
+
+### Material
+* `Ctrl + drag` a material onto a model to assign it to an ID and automatically create a layer
+
+### Painting
+* Brush size: `Ctrl + RMB + drag`
