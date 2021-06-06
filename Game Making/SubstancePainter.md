@@ -6,6 +6,7 @@
 
 ### Camera
 * Rotate / Move / Zoom: `Alt + Left/Mid/Right Mouse`
+* Snap Rotate: `Alt + LMB`
 * Rotate scene lighting: `Shift + Right Mouse Drag`
 
 ### Material
@@ -13,3 +14,5 @@
 
 ### Painting
 * Brush size: `Ctrl + RMB + drag`
+* Brush angle: `Ctrl + LMB + drag`
+
