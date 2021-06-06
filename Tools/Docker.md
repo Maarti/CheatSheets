@@ -6,6 +6,7 @@
 Clone a project with a `Dockerfile` file (= instructions how to assemble the private filesystem)
 
 An **Image** is a set of files which has no state (it has multiple versions, like a git repository)
+
 A **Container** is the instantiation of a Docker Image.
 
 ## Build
