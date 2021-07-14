@@ -24,3 +24,6 @@ docker run --publish 8000:8080 --detach --name bb bulletinboard:1.0
 ## [Instructions](https://docs.docker.com/engine/reference/builder/#from)
 - `RUN` = image build step [many] (ex: install library)
 - `CMD` = which command to run on start, after the image is built [only 1] (ex: `CMD ["python", "./app.py"]`)
+
+## [Docker compose](https://docs.docker.com/compose/compose-file/compose-file-v3/)
+- ports: (HOST:CONTAINER)
