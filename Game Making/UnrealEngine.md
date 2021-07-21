@@ -34,3 +34,5 @@ Open Skeletal Mesh => Animation => Move bone => click (+) to add keyframe
 ## Material
  - Create "constant 3" node (for RGB color): `hold 3 + click`
 
+## Sequencer
+ - Follow current camera in viewport: click the camera icon in master sequence "Lock viewport to shot"
