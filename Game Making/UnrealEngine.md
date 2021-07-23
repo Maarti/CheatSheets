@@ -34,5 +34,9 @@ Open Skeletal Mesh => Animation => Move bone => click (+) to add keyframe
 ## Material
  - Create "constant 3" node (for RGB color): `hold 3 + click`
 
+## Landscape
+ - Use [World Machine](https://www.world-machine.com/) to simulte/generate a terrain height map
+ - Hold `Shift` to reverse the current brush
+
 ## Sequencer
  - Follow current camera in viewport: click the camera icon in master sequence "Lock viewport to shot"
