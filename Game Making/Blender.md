@@ -2,8 +2,11 @@
 
 *Cheatsheet I made from [Blender Fundamentals](https://www.youtube.com/playlist?list=PLa1F2ddGya_8V90Kd5eC5PeBjySbXWGK1) and [Blender Guru tutorials](https://www.blenderguru.com/tutorials/blender-beginner-tutorial-series)*
 
+
 ## Shortcuts
 Hover anything in the UI and press F1 to display the documentation
+
+`F3` : all commands search
 
 ### Camera :
 - `Middle click drag` : rotate camera
@@ -230,6 +233,15 @@ Settings:
 
 ## Useful
 - Lissage : Smooth or Subsurf (apres un lissage, sélectionner tous les points et Ctrl+N pour recalculer les normales)
+
+- Addons to test for Unreal:
+  - Mr mannequin
+  - Auto Rig Pro
+  - Uefy
+  - mb-lab addon (create humans)
+  - Advanced Locomotion System V4 (ALS4) ue4
+  - AutoRig+ALS4 => https://www.youtube.com/watch?v=oNDF2zpICxE
+  - Manualy => https://www.youtube.com/watch?v=nY4Q8cYBLP8
 
 <details><summary>List of IOR values for various materials</summary>
 <p>
