@@ -40,6 +40,7 @@ Open Skeletal Mesh => Animation => Move bone => click (+) to add keyframe
 ## Landscape
  - Use [World Machine](https://www.world-machine.com/) to simulte/generate a terrain height map
  - Hold `Shift` to reverse the current brush
+ - [Add grass proceduraly](https://learn.unrealengine.com/course/3590620/module/6960224) with Landscape Grass Type
 
 ## Sequencer
  - Follow current camera in viewport: click the camera icon in master sequence "Lock viewport to shot"
