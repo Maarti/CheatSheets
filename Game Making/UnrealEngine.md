@@ -8,7 +8,7 @@
  - Each material requires the model go through another rendering pass
  - Relocate pivot point (temporarily): `Middle mouse + drag` the sphere on the gizmo
  - Collision:
-   - Save simple collision along with the object in DCC with the name: `UCX_[object_name]_01` (or any number suffix)
+   - Save custom simple collision along with the object in DCC with the name: `UCX_[object_name]_01` (or any number suffix) ([UBX_ for boxes](https://docs.unrealengine.com/4.26/en-US/WorkingWithContent/Importing/FBX/StaticMeshes/#collision))
    - Duplicate a collider: `Alt + drag` to duplicate
  - Use Unreal LOD generation (use LOD coloration mode in editor)
 

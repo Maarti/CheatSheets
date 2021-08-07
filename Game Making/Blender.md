@@ -243,6 +243,10 @@ Settings:
   - AutoRig+ALS4 => https://www.youtube.com/watch?v=oNDF2zpICxE
   - Manualy => https://www.youtube.com/watch?v=nY4Q8cYBLP8
 
+- Export to Unreal:
+  - Unit: 0.01m
+  - Axis
+
 <details><summary>List of IOR values for various materials</summary>
 <p>
 
