@@ -16,3 +16,10 @@
 * Brush size: `Ctrl + RMB + drag`
 * Brush angle: `Ctrl + LMB + drag`
 
+## ID Map
+* Add vertex color in Blender to use it as an ID Map.
+* In Substance: Texture Set Settings > Bake Mesh Map > ID: set Color Source = Vertex Color > Bake
+* Add Black Mask > Add Color Selection Effect > Pick Color
+
+## [Import in Unreal](https://sbcomputerentertainment.com/other-2/editor/how-to-import-substance-painter-textures-into-ue4/)
+* Uncheck the `sRGB` on the OcclusionRoughnessMetallic texture

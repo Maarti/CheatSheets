@@ -38,6 +38,7 @@ Open Skeletal Mesh => Animation => Move bone => click (+) to add keyframe
  - Use a "static switch" node for functionnalities that are not useful all the time (eg. using BaseColor or BaseTexture)
 
 ## Landscape
+ - [Recommended landscape sizes](https://docs.unrealengine.com/4.26/en-US/BuildingWorlds/Landscape/TechnicalGuide/#recommendedlandscapesizes)
  - Use [World Machine](https://www.world-machine.com/) to simulte/generate a terrain height map
  - Hold `Shift` to reverse the current brush
  - [Add grass proceduraly](https://learn.unrealengine.com/course/3590620/module/6960224) with Landscape Grass Type
@@ -56,3 +57,4 @@ Open Skeletal Mesh => Animation => Move bone => click (+) to add keyframe
  
 ## Miscellaneous
  - Type `help` in the console to generate an interactive help in the web browser
+ - Display collider in-game: on collider: rendering > uncheck "hidden in game" + increase "line thickness"
