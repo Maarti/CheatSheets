@@ -222,6 +222,9 @@ Settings:
 ## Texture Paint
 - **Paint Mask**: Click the "square icon" in top left in Texture Paint view. Switch to Edit mode, select faces you want to paint, switch to object mode, paint.
 
+## Vertex Paint
+- **Fill face**: in edit mode, select the wanted faces. Switch to "Vertex Paint" mode, select "Paint mask", select a color, hit `Shift+K` (useful to use it as id map in Substance/Mixer)
+
 ## [Shader](https://www.blenderguru.com/tutorials/2017/6/21/how-to-use-blenders-new-ultimate-shader-principled-bsdf)
 - Metallic: It's 0 or 1 (is it metallic or not?)
 - Roughness: 0 = lot of reflection ; 1 = No reflection
