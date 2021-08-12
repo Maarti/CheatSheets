@@ -238,7 +238,7 @@ Settings:
 - Lissage : Smooth or Subsurf (apres un lissage, sélectionner tous les points et Ctrl+N pour recalculer les normales)
 
 - Addons to test for Unreal:
-  - Mr mannequin
+  - [Mr mannequin](https://github.com/Jim-Kroovy/Mr-Mannequins-Tools/releases/tag/v1.4)
   - Auto Rig Pro
   - Uefy
   - mb-lab addon (create humans)

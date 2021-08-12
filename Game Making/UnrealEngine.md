@@ -58,3 +58,4 @@ Open Skeletal Mesh => Animation => Move bone => click (+) to add keyframe
 ## Miscellaneous
  - Type `help` in the console to generate an interactive help in the web browser
  - Display collider in-game: on collider: rendering > uncheck "hidden in game" + increase "line thickness"
+ - `ctrl+B`: select the current Actor in Content Browser
