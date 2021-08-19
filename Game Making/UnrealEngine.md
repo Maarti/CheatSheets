@@ -59,7 +59,13 @@ In "Get actor with tag" node, you can put
  - Use "[Merge Actors](https://docs.unrealengine.com/4.26/en-US/Basics/Actors/Merging/)" to merge multiple static meshes and materials into one (doesn't work well with tiled textures)
  - [Hierarchy LOD](https://docs.unrealengine.com/4.26/en-US/BuildingWorlds/HLOD/): replaces multiple static meshes with a single one at long view distances
  - In BP, use "does implement interface" node instead of a cast (when possible) to avoid loading the whole object in memory
- 
+
+## Tools
+ - Use "Contstruction script" (run in editor)
+ - Use a "Custom Event" and check "call in editor" to call it from a button
+ - Create an [Editor Utility Widget](https://docs.unrealengine.com/4.26/en-US/InteractiveExperiences/UMG/UserGuide/EditorUtilityWidgets/) (with [Details View](https://filipsivak.medium.com/unreal-how-to-use-details-view-and-single-property-view-in-editor-utility-widget-38c47ba8dfe5))
+ - Use [Python scripts](https://docs.unrealengine.com/4.26/en-US/ProductionPipelines/ScriptingAndAutomation/Python/)
+
 ## Miscellaneous
  - Type `help` in the console to generate an interactive help in the web browser
  - Display collider in-game: on collider: rendering > uncheck "hidden in game" + increase "line thickness"
