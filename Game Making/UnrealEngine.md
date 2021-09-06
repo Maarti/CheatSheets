@@ -70,3 +70,4 @@ In "Get actor with tag" node, you can put
  - Type `help` in the console to generate an interactive help in the web browser
  - Display collider in-game: on collider: rendering > uncheck "hidden in game" + increase "line thickness"
  - `ctrl+B`: select the current Actor in Content Browser
+ - Align object on the ground: select it and press `end`
