@@ -78,7 +78,7 @@ Add the `done()` parameter and call it at the end of the `subscribe()`
 it("should fail", (done) => {
     // ...
     obs.subscribe((value) => {        
-        expect(true).toBe(false);
+        expect(value).toBe(false);
         done();
     });
 });
@@ -94,6 +94,15 @@ it("should fail", () => {
       });
     });
 });
+```
+
+Or with `jest-marbles`:
+```
+import { cold } from 'jest-marbles';
+
+expect(component.name$).toBeObservable(
+	cold('a', { a: 'Bryan'}),
+);
 ```
 
 ## NGRX
