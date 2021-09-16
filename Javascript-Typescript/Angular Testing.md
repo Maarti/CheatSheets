@@ -87,11 +87,11 @@ Or [return a promise](https://github.com/jest-community/eslint-plugin-jest/issue
 ```
 it("should fail", () => {
     // ...
-    return new Promise(resolve => {
-	    obs.subscribe((value) => {        
-           expect(true).toBe(false);
-           resolve();
-        });
+    return new Promise<void>(resolve => {
+      component.obs$.subscribe(value => {
+        expect(value).toBe(true);
+        resolve();
+      });
     });
 });
 ```
