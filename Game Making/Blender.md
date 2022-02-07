@@ -115,6 +115,8 @@ Hover anything in the UI and press F1 to display the documentation
 - **Copy** an animation from another object that has the same armature: `File` > `Append` > Select the file that has the animation > `Action` > Pick the animation
 - **Delete** all animations: In the **Outliner** panel, select **Blender File** mode then delete all under the `Actions` bullet point
 
+![human_running_keyframes](img/human_running_keyframes.png)
+
 Keyframes of [quadruped animation](https://youtu.be/yl3IX6hgNss?t=226):
 
 ![walking keyframes](img/quadruped_walking_keyframes.png)
@@ -129,6 +131,8 @@ Keyframes of [quadruped up and down body](https://youtu.be/INQx-Lzs8mU?t=47) whi
 [Dog Run Cycle](https://www.youtube.com/watch?v=6uB2a2K6HGI)
 
 ### Rigging/Skinning ([tutorial](https://www.youtube.com/watch?v=8mZtc33rQ3c))
+"[Humane Rigging](https://www.youtube.com/playlist?list=PLWbnoG8MQdQSO79Kq3EVvtxrO8MTwzJNd)" rigging principles still applicable today
+
 - `Shift` + `A` : Add armature
 - In the armature "Object Data" menu, check `In Front`
 - Extrude the tail of the armature
