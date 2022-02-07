@@ -1,6 +1,6 @@
 # Substance Painter cheatsheet :
 
-[Tutorial](https://www.youtube.com/watch?v=_j27AS0VQOw&list=PLB0wXHrWAmCwnqWfKdGEmbtSKN2EzvLrY&index=5)
+[Tutorial](https://www.youtube.com/playlist?list=PLB0wXHrWAmCwnqWfKdGEmbtSKN2EzvLrY)
 
 ## Shortcuts
 
@@ -22,4 +22,9 @@
 * Add Black Mask > Add Color Selection Effect > Pick Color
 
 ## [Import in Unreal](https://sbcomputerentertainment.com/other-2/editor/how-to-import-substance-painter-textures-into-ue4/)
-* Uncheck the `sRGB` on the OcclusionRoughnessMetallic texture
+1. Uncheck the `sRGB` on the OcclusionRoughnessMetallic texture
+2. Set the normal map to "NormalMap"
+3. Link the RGB from OcclusionRoughnessMetallic respectively to: AO, Roughness, Metallic
+
+## Misc
+- [Substance Designer](https://www.artstation.com/marketplace/p/dNBVB/substance-designer-survival-kit-part-1
