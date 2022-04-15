@@ -17,4 +17,8 @@
 ## [Resolution](https://youtu.be/NzKtubDsC9o?t=1337)
 A node inherit its resolution from its input or its parent (root level graph)
 
+## Nodes
+### [Flood fill node](https://youtu.be/arGXAOk4Tr8?t=11)
+Créer des donnes de remplissage pour chaque îlot (entouré par des bordures)
+
 ## Misc

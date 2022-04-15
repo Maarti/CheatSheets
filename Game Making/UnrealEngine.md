@@ -42,7 +42,8 @@ Open Skeletal Mesh => Animation => Move bone => click (+) to add keyframe
 ## Material
 - Create "constant 3" node (for RGB color): `hold 3 + click`
 - Use a "static switch" node for functionnalities that are not useful all the time (eg. using BaseColor or BaseTexture)
-In "Get actor with tag" node, you can put
+- [Runtime Virtual Texturing (RVT)](https://www.youtube.com/watch?v=xYuIDFzKaF4&ab_channel=UnrealSensei) to blend materials between objects
+
 ## Landscape
 - [Recommended landscape sizes](https://docs.unrealengine.com/4.26/en-US/BuildingWorlds/Landscape/TechnicalGuide/#recommendedlandscapesizes)
 - Use [World Machine](https://www.world-machine.com/) to simulte/generate a terrain height map
