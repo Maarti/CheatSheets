@@ -11,6 +11,10 @@
   - Save custom simple collision along with the object in DCC with the name: `UCX_[object_name]_01` (or any number suffix) ([UBX_ for boxes](https://docs.unrealengine.com/4.26/en-US/WorkingWithContent/Importing/FBX/StaticMeshes/#collision))
   - Duplicate a collider: `Alt + drag` to duplicate
 - Use Unreal LOD generation (use LOD coloration mode in editor)
+- Change pivot point (in scene view):
+   - MMB + drag and drop the middle of gizmo to move pivot point
+   - Alt+V + MMB to snap it to vertex
+   - V + LMB move to snap it to another object
 
 ## Blueprint
 - Create a branch node: `B+click`
@@ -71,6 +75,10 @@ By default, Pawns register themselves as stimuli sources. You can disable it wit
 
 ## Sequencer
 - Follow current camera in viewport: click the camera icon in master sequence "Lock viewport to shot"
+
+## Data Asset
+Create C++ class inheriting from DataAsset
+Should not be manipulated, should only be used as data initializer. Can have simple functions.
 
 ## Optimization
 - Always have texture size that are power of 2 in order for mipmap to works (else, the texture will always take its full size in memory even if its far away from the camera)
